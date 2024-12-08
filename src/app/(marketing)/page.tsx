@@ -46,7 +46,7 @@ const HomePage = async () => {
                 <ArrowRightIcon className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' />
               </span>
             </button>
-            <h1 className='text-foreground   text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading'>
+            <h1 className='text-foreground   text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-7xl !leading-[1.15] w-full font-heading'>
               Your Gateway to{" "}
               <span className=''>
                 <TypingEffect />
@@ -80,7 +80,7 @@ const HomePage = async () => {
             <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
               <BorderBeam size={250} duration={12} delay={9} />
               <Image
-                src='/assets/dashboard-dark.svg'
+                src='/assets/dashboard.png'
                 alt='Dashboard'
                 width={1200}
                 height={1200}
