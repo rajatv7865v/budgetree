@@ -20,6 +20,10 @@ const Footer = () => {
             <p className='text-muted-foreground mt-4 text-sm text-start'>
               Manage your rewards with ease.
             </p>
+            <ul className='text-neutral-600 text-[14px] pt-1'>
+              <li>+(91) 8630000676</li>
+              <li>support@budgetree.in</li>
+            </ul>
           </div>
         </AnimationContainer>
 
