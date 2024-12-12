@@ -23,9 +23,7 @@ const PricingPage = () => {
                 </div>
             </AnimationContainer>
 
-            <AnimationContainer delay={0.2}>
-                <PricingCards />
-            </AnimationContainer>
+           
 
             <AnimationContainer delay={0.3}>
                 <div className="mt-20 w-full">

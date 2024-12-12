@@ -9,6 +9,8 @@ import AnimationContainer from "./global/animation-container";
 // navigation
 import Navbar from "./navigation/navbar";
 import Footer from "./navigation/footer";
+import Wrapper from "./global/wrapper";
+import Container from "./global/container";
 
 // providers
 import Providers from "./providers/providers";
@@ -23,23 +25,19 @@ import PricingCards from "./pricing-cards";
 // blog
 import Blogs from "./blog/blogs";
 
-
 export {
-    SignInForm,
-    SignUpForm,
-
-    Icons,
-    MaxWidthWrapper,
-    AnimationContainer,
-    Navbar,
-    Footer,
-
-    Providers,
-
-    Sidebar,
-    DashboardNavbar,
-
-    PricingCards,
-
-    Blogs,
+  SignInForm,
+  SignUpForm,
+  Wrapper,
+  Container,
+  Icons,
+  MaxWidthWrapper,
+  AnimationContainer,
+  Navbar,
+  Footer,
+  Providers,
+  Sidebar,
+  DashboardNavbar,
+  PricingCards,
+  Blogs,
 };

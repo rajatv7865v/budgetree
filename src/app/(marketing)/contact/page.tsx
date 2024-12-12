@@ -19,13 +19,13 @@ const EnterprisePage = () => {
                   htmlFor='email'
                   className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
                 >
-                  Your email
+                  First Name
                 </label>
                 <input
-                  type='email'
+                  type='text'
                   id='email'
                   className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
-                  placeholder='name@budgetree.com'
+                  placeholder='John'
                   required
                 />
               </div>
@@ -34,13 +34,13 @@ const EnterprisePage = () => {
                   htmlFor='email'
                   className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
                 >
-                  Your email
+                  Last Name
                 </label>
                 <input
-                  type='email'
+                  type='text'
                   id='email'
                   className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
-                  placeholder='name@budgetree.com'
+                  placeholder='Doe'
                   required
                 />
               </div>
@@ -49,7 +49,7 @@ const EnterprisePage = () => {
                   htmlFor='email'
                   className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
                 >
-                  Your email
+                  Work Email
                 </label>
                 <input
                   type='email'
@@ -64,30 +64,106 @@ const EnterprisePage = () => {
                   htmlFor='subject'
                   className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
                 >
-                  Subject
+                  Region
+                </label>
+
+                <select
+                  name=''
+                  id=''
+                  className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
+                >
+                  <option disabled selected>
+                    Please Select
+                  </option>
+                  <option>United States</option>
+                  <option>India</option>
+                  <option>Europe</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  htmlFor='subject'
+                  className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                >
+                  No. of Employess
+                </label>
+                <select
+                  name=''
+                  id=''
+                  className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
+                >
+                  <option disabled selected>
+                    Please Select
+                  </option>
+                  <option>1-50</option>
+                  <option>51-200</option>
+                  <option>201-500</option>
+                  <option>501-1000</option>
+                  <option>1000+</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  htmlFor='subject'
+                  className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                >
+                  Country
+                </label>
+                <select
+                  name=''
+                  id=''
+                  className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
+                >
+                  <option disabled selected>
+                    Please Select
+                  </option>
+                  <option>India (+91)</option>
+                  <option>United States (+1)</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  htmlFor='subject'
+                  className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                >
+                  Phone Number
                 </label>
                 <input
                   type='text'
                   id='subject'
                   className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
-                  placeholder='Let us know how we can help you'
+                  placeholder='+91 00000-00000'
                   required
                 />
               </div>
-              <div className='sm:col-span-2'>
+              <div>
                 <label
-                  htmlFor='message'
-                  className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400'
+                  htmlFor='subject'
+                  className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
                 >
-                  Your message
+                  What do you like to use Budgetree for?
                 </label>
-                <textarea
-                  id='message'
-                  rows={6}
-                  className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
-                  placeholder='Leave a comment...'
-                ></textarea>
+                <select
+                  name=''
+                  id=''
+                  className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
+                >
+                  <option disabled selected>
+                    Please Select
+                  </option>
+                  <option>Gift Cards</option>
+                  <option>Reward Market Place and RewardX</option>
+                  <option>Corporate and festive Giftings</option>
+                  <option>Channel Incentive and Consumer Promotions</option>
+                  <option>Instant Payouts</option>
+                  <option>UPI rewards</option>
+                  <option>Gaming rewards</option>
+                  <option>Referral rewards</option>
+                  <option>Customized Loyalty Program White Labelled</option>
+                  <option>Coupons, Discount and Offers</option>
+                </select>
               </div>
+
               <div className='flex items-center justify-center'>
                 <button
                   type='submit'

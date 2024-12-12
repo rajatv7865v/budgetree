@@ -17,25 +17,25 @@ export const NAV_LINKS = [
     href: "/products",
     menu: [
       {
-        title: "Layout",
+        title: "LoyaltyX", // https://thriwe.com/
         tagline: "Shorten links and track their performance.",
         href: "/products/loyalty",
         icon: Link2Icon,
       },
       {
-        title: "KYC 360",
+        title: "KYC 360", // https://www.sprintverify.in/kyc-verification-api.html
         tagline: "Secure your links with a password.",
         href: "/products/kyc360",
         icon: LockIcon,
       },
       {
-        title: "Payout",
+        title: "Payout", // https://bulkpe.in
         tagline: "Gain insights into who is clicking your links.",
         href: "/products/payout",
         icon: LineChartIcon,
       },
       {
-        title: "Rewards",
+        title: "Rewards", // 
         tagline: "Use QR codes to reach your audience.",
         href: "/products/rewards",
         icon: QrCodeIcon,
