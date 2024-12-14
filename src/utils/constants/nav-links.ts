@@ -23,7 +23,7 @@ export const NAV_LINKS = [
         icon: Link2Icon,
       },
       {
-        title: "KYC 360", // https://www.sprintverify.in/kyc-verification-api.html
+        title: "UPI Reward", // https://www.sprintverify.in/kyc-verification-api.html
         tagline: "Secure your links with a password.",
         href: "/products/kyc360",
         icon: LockIcon,
@@ -35,7 +35,7 @@ export const NAV_LINKS = [
         icon: LineChartIcon,
       },
       {
-        title: "Rewards", // 
+        title: "Rewards", //
         tagline: "Use QR codes to reach your audience.",
         href: "/products/rewards",
         icon: QrCodeIcon,

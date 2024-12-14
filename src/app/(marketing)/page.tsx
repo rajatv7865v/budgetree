@@ -38,34 +38,44 @@ import Marquee from "@/components/ui/marquee";
 const HomePage = async () => {
   const reviews = [
     {
-      name: "Jack",
-      username: "@jack",
-      body: "I've never seen anything like this before. It's amazing. I love it.",
+      logo: "/assets/integrations/bamboohr.png",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
     {
-      name: "Jill",
-      username: "@jill",
-      body: "I don't know what to say. I'm speechless. This is amazing.",
+      logo: "/assets/integrations/hubspot.png",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
     {
-      name: "John",
-      username: "@john",
-      body: "I'm at a loss for words. This is amazing. I love it.",
+      logo: "/assets/integrations/salesforce.png",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
     {
-      name: "Jane",
-      username: "@jane",
-      body: "I'm at a loss for words. This is amazing. I love it.",
+      logo: "/assets/integrations/teams.png",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
     {
-      name: "Jenny",
-      username: "@jenny",
-      body: "I'm at a loss for words. This is amazing. I love it.",
+      logo: "/assets/integrations/typeform.webp",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
     {
-      name: "James",
-      username: "@james",
-      body: "I'm at a loss for words. This is amazing. I love it.",
+      logo: "/assets/integrations/zapiier.webp",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
+    },
+    {
+      logo: "/assets/integrations/zoho.png",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
+    },
+    {
+      logo: "/assets/integrations/zoom.jpeg",
+      title:
+        "I've never seen anything like this before. It's amazing. I love it.",
     },
   ];
   const user = await currentUser();
@@ -354,25 +364,24 @@ const HomePage = async () => {
               <Marquee pauseOnHover className='[--duration:20s] select-none'>
                 {firstRow.map((review) => (
                   <figure
-                    key={review.name}
+                    key={review.logo}
                     className={cn(
                       "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
                       "border-black bg-background over:bg-zinc-50/[.15]"
                     )}
                   >
-                    <div className='flex flex-row items-center gap-2'>
-                      <UserIcon className='w-6 h-6' />
-                      <div className='flex flex-col'>
-                        <figcaption className='text-sm font-medium'>
-                          {review.name}
-                        </figcaption>
-                        <p className='text-xs font-medium text-muted-foreground'>
-                          {review.username}
-                        </p>
+                    <div className='flex flex-row items-center justify-center '>
+                      {/* <UserIcon className='w-6 h-6' /> */}
+                      <div className=' rounded-full w-[90px] h-[90px] flex items-center justify-center'>
+                        <img
+                          src={review.logo}
+                          alt='logo'
+                          className='w-full  object-fill hover:scale-90 zoom-in-150'
+                        />
                       </div>
                     </div>
                     <blockquote className='mt-2 text-sm'>
-                      {review.body}
+                      {review.title}
                     </blockquote>
                   </figure>
                 ))}
@@ -384,25 +393,24 @@ const HomePage = async () => {
               >
                 {secondRow.map((review) => (
                   <figure
-                    key={review.name}
+                    key={review.logo}
                     className={cn(
                       "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-                      "border-black bg-background over:bg-zinc-50/[.15]"
+                      "border-black bg-background over:bg-zinc-50/[.15] "
                     )}
                   >
-                    <div className='flex flex-row items-center gap-2'>
-                      <UserIcon className='w-6 h-6' />
-                      <div className='flex flex-col'>
-                        <figcaption className='text-sm font-medium'>
-                          {review.name}
-                        </figcaption>
-                        <p className='text-xs font-medium text-muted-foreground'>
-                          {review.username}
-                        </p>
+                    <div className='flex flex-row items-center justify-center '>
+                      {/* <UserIcon className='w-6 h-6' /> */}
+                      <div className=' rounded-full w-[90px] h-[90px] flex items-center justify-center'>
+                        <img
+                          src={review.logo}
+                          alt='logo'
+                          className='w-full  object-fill hover:scale-90 zoom-in-150'
+                        />
                       </div>
                     </div>
                     <blockquote className='mt-2 text-sm'>
-                      {review.body}
+                      {review.title}
                     </blockquote>
                   </figure>
                 ))}
