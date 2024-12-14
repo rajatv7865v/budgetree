@@ -6,7 +6,7 @@ import Logo from "../../../public/assets/budgetree_logo.png";
 
 const Footer = () => {
   return (
-    <footer className='flex  flex-col bg-white relative items-center justify-center border-t border-border pt-16 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.black/8%),transparent)]'>
+    <footer className='flex  flex-col bg-white relative items-center justify-center border-t border-border pt-16 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.blue/8%),transparent)]'>
       <div className='absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1.5 bg-foreground rounded-full'></div>
 
       <div className='grid gap-8 xl:grid-cols-3 xl:gap-8 w-full'>
@@ -165,14 +165,14 @@ const Footer = () => {
       <div className='mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full'>
         <AnimationContainer delay={0.6}>
           <p className='text-sm text-muted-foreground mt-8 md:mt-0'>
-            &copy; {new Date().getFullYear()} budgetree pvt. ltd. All rights
+            &copy; {new Date().getFullYear()} Budgetree Technology Pvt. ltd. All rights
             reserved.
           </p>
         </AnimationContainer>
       </div>
 
       <div className='h-[7rem]  lg:h-[16rem] w-full hidden md:flex items-center justify-center'>
-        <TextHoverEffect text='budgetree' />
+        <TextHoverEffect text='Empowering loyalty, one reward at a time.' />
       </div>
     </footer>
   );

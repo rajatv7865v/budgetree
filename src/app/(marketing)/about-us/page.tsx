@@ -13,12 +13,12 @@ const PricingPage = () => {
         <MaxWidthWrapper className="mb-40">
             <AnimationContainer delay={0.1}>
                 <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
-                    <MagicBadge title="Pricing" />
+                    <MagicBadge title="About us" />
                     <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                        Simple and transparent pricing
+                    Seamless rewards, effortless payments – that's Budgetree.
                     </h1>
                     <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                        Choose a plan that works for you. No hidden fees. No surprises.
+                    At Budgetree, we believe in simplifying the way businesses engage with their customers and partners. As a leading SaaS platform for loyalty rewards and payment solutions, our mission is to empower businesses of all sizes—whether B2B or B2C—to create memorable experiences and foster deeper relationships through innovative rewards programs.
                     </p>
                 </div>
             </AnimationContainer>

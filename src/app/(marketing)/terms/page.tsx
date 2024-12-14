@@ -12,7 +12,7 @@ const TermsPage = () => {
                     Last updated: 17th June 2024
                 </p>
                 <p className="mt-4">
-                    Welcome to Linkify. These terms and conditions outline the rules and regulations for the use of Linkify&apos;s website and services.
+                    Welcome to Budgetree. These terms and conditions outline the rules and regulations for the use of Linkify&apos;s website and services.
                 </p>
 
                 <h2 className="text-xl font-medium mt-8">
@@ -64,23 +64,7 @@ const TermsPage = () => {
                     </ul>
                 </div>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Link Shortening and Management
-                </h2>
-
-                <h3 className="text-lg mt-8">
-                    URL Shortening
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    Linkify provides a URL shortening service that allows you to create shortened links from long URLs. You agree not to use this service to create links to illegal or harmful content.
-                </p>
-
-                <h3 className="text-lg mt-8">
-                    Analytics
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    Linkify offers analytics for your shortened URLs. You agree to use this data responsibly and comply with all applicable privacy laws.
-                </p>
+ 
 
                 <h3 className="text-lg mt-8">
                     QR Code Generation
@@ -159,11 +143,11 @@ const TermsPage = () => {
                     Contact Us
                 </h2>
                 <p className="mt-8 text-muted-foreground">
-                    If you have any questions or concerns about this Privacy Policy, please contact us at support@linkify.io.
+                    If you have any questions or concerns about this Privacy Policy, please contact us at support@budgetree.in.
                 </p>
 
                 <p className="mt-8 font-medium">
-                    By using Linkify, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.
+                    By using Budgetree, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.
                 </p>
             </AnimationContainer>
         </MaxWidthWrapper>

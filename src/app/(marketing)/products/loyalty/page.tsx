@@ -30,7 +30,7 @@ const LinkShorteningPage = () => {
     },
     {
       name: "Brands",
-      count: "300+",
+      count: "300",
     },
   ];
   const Stepers = [
@@ -111,11 +111,11 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='Simple' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-              Shorten links and track their performance
+            Unleash the power of loyalty with Budgetree's intuitive platform.
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-              Simplify your workflow with powerful link management tools.
-              Shorten links, track clicks, and optimize your strategy with ease.
+              Simplify your workflow with powerful rewards management tools.
+              Create campaigns, track rewards, and optimize your strategy with ease.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
@@ -141,18 +141,8 @@ const LinkShorteningPage = () => {
             ))}
           </div>
         </AnimationContainer>
-        <AnimationContainer delay={0.2} className='w-full'>
-          <div className='w-full flex max-w-4xl py-10 mx-auto'>
-            <Image
-              src='/assets/shorten-links.svg'
-              alt='Shorten links and track their performance'
-              width={80}
-              height={80}
-              className='w-full h-auto'
-            />
-          </div>
-        </AnimationContainer>
-        <div className=''>
+       
+        <div className='pt-40'>
           <h6 className='text-3xl font-semibold'>
             Bounty of Benefits. Extraordinary Offers.
           </h6>
@@ -169,7 +159,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Voyage : Travel Benefits
+                         Travel Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Elevating every journey into a premium travel experience
@@ -194,7 +184,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Culinary : Dining Benefits
+                        Dining Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Global culinary experiences with a depth of local
@@ -218,11 +208,11 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Activ : Sports Benefits
+                        Sports Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Give your esteemed partners a gift of fitness,
-                        camaraderie and sportsmanship with enhanced access to
+                      enhanced access to
                         global sporting facilities
                       </CardDescription>
                     </CardHeader>
@@ -244,7 +234,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Care : Healthcare Benefits
+                       Healthcare Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Care, comfort and convenience - everything is easily
@@ -269,12 +259,11 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Aspire : Lifestyle Benefits
+                       Lifestyle Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Delight in knowing that your valued stakeholders'
-                        wellbeing is nurtured, their leisure is exquisite, and
-                        their loyalty is unwavering.
+                        wellbeing is nurtured, their leisure is exquisite.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -294,7 +283,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Digi : Digital Benefits
+                       Digital Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Designed for the tech-savvy customer who's always
@@ -314,7 +303,7 @@ const LinkShorteningPage = () => {
               </AnimationContainer>
             </div>
           </section>
-          <section className='pt-10 w-full flex items-center'>
+          <section className='pt-40 w-full flex items-center'>
             <Steper Stepers={Stepers} />
             <AnimationContainer delay={0.2} className='w-full relative -right-60'>
               <div className='w-full flex max-w-4xl py-10 mx-auto'>
@@ -357,25 +346,26 @@ const LinkShorteningPage = () => {
       </MaxWidthWrapper>
       <MaxWidthWrapper className='pt-20'>
         <AnimationContainer delay={0.4} className='w-full'>
-          <LampContainer className='max-w-2xl mx-auto'>
-            <div className='flex flex-col items-center justify-center relative w-full text-center'>
-              <h2 className='bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8'>
-                Powerup your link strategy
-              </h2>
-              <p className='text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg'>
-                Take control of your links with advanced features and real-time
-                insights. Simplify your workflow and achieve more.
-              </p>
-              <div className='mt-6'>
-                <Button asChild>
-                  <Link href='/auth/sign-up' className='flex items-center'>
-                    Get started for free
-                    <ArrowRightIcon className='w-4 h-4 ml-2' />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </LampContainer>
+        <LampContainer className='max-w-2xl mx-auto'>
+  <div className='flex flex-col items-center justify-center relative w-full text-center'>
+    <h2 className='text-black py-4 text-center text-4xl font-semibold font-heading tracking-tight md:text-5xl mt-8'>
+      Powerup your loyalty strategy
+    </h2>
+    <p className='text-black mt-6 max-w-lg mx-auto text-base md:text-lg'>
+      Take control of your rewards with advanced features and real-time
+      insights. Simplify your workflow and achieve more engagement.
+    </p>
+    <div className='mt-6'>
+      <Button asChild>
+        <Link href='/auth/sign-up' className='flex items-center'>
+          Get started for free
+          <ArrowRightIcon className='w-4 h-4 ml-2' />
+        </Link>
+      </Button>
+    </div>
+  </div>
+</LampContainer>
+
         </AnimationContainer>
       </MaxWidthWrapper>
     </>

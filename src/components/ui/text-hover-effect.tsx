@@ -49,11 +49,11 @@ export const TextHoverEffect = ({
         >
           {hovered && (
             <>
-              <stop offset='0%' stopColor={"var(--indigo-500)"} />
-              <stop offset='25%' stopColor={"var(--violet-500)"} />
-              <stop offset='50%' stopColor={"var(--purple-500)"} />
-              <stop offset='75%' stopColor={"var(--fuchsia-500)"} />
-              <stop offset='100%' stopColor={"var(--rose-500)"} />
+              <stop offset='0%' stopColor={"var(--blue-700)"} />
+              <stop offset='25%' stopColor={"var(--blue-500)"} />
+              <stop offset='50%' stopColor={"var(--blue-600)"} />
+              <stop offset='75%' stopColor={"var(--blue-500)"} />
+              <stop offset='100%' stopColor={"var(--blue-500)"} />
             </>
           )}
         </linearGradient>
@@ -91,8 +91,8 @@ export const TextHoverEffect = ({
         y='50%'
         textAnchor='middle'
         dominantBaseline='middle'
-        strokeWidth='0.3'
-        className='font-[helvetica] font-bold stroke-neutral-800 fill-transparent text-7xl'
+        strokeWidth='0.2'
+        className='font-[helvetica] font-bold stroke-neutral-800 fill-transparent text-xl'
         style={{ opacity: hovered ? 0.7 : 0 }}
       >
         {text}
@@ -102,8 +102,8 @@ export const TextHoverEffect = ({
         y='50%'
         textAnchor='middle'
         dominantBaseline='middle'
-        strokeWidth='0.3'
-        className='font-[helvetica] font-bold fill-transparent text-7xl stroke-neutral-800'
+        strokeWidth='0.2'
+        className='font-[helvetica] font-bold fill-transparent text-xl stroke-neutral-800'
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -122,9 +122,9 @@ export const TextHoverEffect = ({
         textAnchor='middle'
         dominantBaseline='middle'
         stroke='url(#textGradient)'
-        strokeWidth='0.2'
+        strokeWidth='1.0'
         mask='url(#textMask)'
-        className='font-[helvetica] font-bold fill-transparent text-7xl'
+        className='font-[helvetica] font-bold fill-transparent text-xl'
       >
         {text}
       </text>

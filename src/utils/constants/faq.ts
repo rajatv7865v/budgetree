@@ -1,42 +1,35 @@
+
+
 export const FAQ = [
     {
-        id: "item-1",
-        question: "Is it accessible?",
-        answer: "Yes. It adheres to the WAI-ARIA design pattern, ensuring accessibility for all users.",
+        id: "faq-1",
+        question: "What is Budgetree?",
+        answer: "Budgetree is a SaaS platform offering loyalty rewards and payment solutions for businesses. It serves both B2B and B2C use cases, helping companies create and manage custom reward programs and streamline payments."
     },
     {
-        id: "item-2",
-        question: "What features does the software offer?",
-        answer: "Our link management software offers features like link shortening, click tracking, customizable branded links, and AI-powered suggestions.",
+        id: "faq-2",
+        question: "Who can use Budgetree?",
+        answer: "Budgetree is designed for businesses of all sizes, whether you are a small startup looking to engage customers or an enterprise managing complex loyalty programs."
     },
     {
-        id: "item-3",
-        question: "How does the pricing work?",
-        answer: "We offer three plans: Free, Pro ($9/month), and Business ($49/month). Yearly subscriptions come with a discount.",
+        id: "faq-3",
+        question: "What features does Budgetree offer?",
+        answer: "Budgetree provides tools for managing loyalty programs, real-time rewards tracking, seamless payment integrations, analytics for engagement insights, and customizable solutions for various industries."
     },
     {
-        id: "item-4",
-        question: "Can I upgrade or downgrade my plan?",
-        answer: "Yes! You can easily upgrade or downgrade your plan at any time through your account settings.",
+        id: "faq-4",
+        question: "Is Budgetree suitable for both B2B and B2C businesses?",
+        answer: "Yes, Budgetree is built to cater to both B2B and B2C businesses, offering tailored solutions to meet the specific needs of different business models."
     },
     {
-        id: "item-5",
-        question: "Is there customer support available?",
-        answer: "Absolutely! We provide community support for all users and priority support for Pro and Business plan subscribers.",
+        id: "faq-5",
+        question: "What support options are available?",
+        answer: "Budgetree offers 24/7 customer support, onboarding assistance, and detailed documentation to ensure a smooth experience for our users."
     },
     {
-        id: "item-6",
-        question: "Can I track my link clicks?",
-        answer: "Yes, our software allows you to track clicks on your links, providing insights into user engagement and demographics.",
-    },
-    {
-        id: "item-7",
-        question: "Is there a mobile app available?",
-        answer: "Currently, we do not have a dedicated mobile app, but our web application is fully responsive and works well on mobile devices.",
-    },
-    {
-        id: "item-8",
-        question: "What payment methods do you accept?",
-        answer: "We accept various payment methods including credit cards, PayPal, and other secure payment options.",
-    },
+        id: "faq-6",
+        question: "How does Budgetree handle payments?",
+        answer: "Budgetree integrates with leading payment gateways to provide secure and seamless payment processing for your loyalty programs."
+    }
 ];
+
