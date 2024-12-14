@@ -111,11 +111,10 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='Simple' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-              Shorten links and track their performance
+            Transform Customer Engagement with Our Loyalty Stack 
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-              Simplify your workflow with powerful link management tools.
-              Shorten links, track clicks, and optimize your strategy with ease.
+            Our Loyalty Stack SaaS platform empowers businesses to build deeper relationships with customers, drive repeat purchases, and unlock long-term value through personalized loyalty programs. Whether you're a retailer, service provider, or enterprise, our solution adapts to your unique needs, helping you create unforgettable customer experiences.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>

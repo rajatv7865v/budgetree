@@ -18,24 +18,24 @@ export const NAV_LINKS = [
     menu: [
       {
         title: "LoyaltyX", // https://thriwe.com/
-        tagline: "Shorten links and track their performance.",
+        tagline: "Loyalty Stack for engagement",
         href: "/products/loyalty",
         icon: Link2Icon,
       },
       {
-        title: "UPI Reward", // https://www.sprintverify.in/kyc-verification-api.html
-        tagline: "Secure your links with a password.",
+        title: "UPI Rewards", // https://www.sprintverify.in/kyc-verification-api.html
+        tagline: "UPI Rewards stack.",
         href: "/products/kyc360",
         icon: LockIcon,
       },
       {
         title: "Payout", // https://bulkpe.in
-        tagline: "Gain insights into who is clicking your links.",
+        tagline: "Corporate payments solution.",
         href: "/products/payout",
         icon: LineChartIcon,
       },
       {
-        title: "Rewards", //
+        title: "RewardX", //
         tagline: "Use QR codes to reach your audience.",
         href: "/products/rewards",
         icon: QrCodeIcon,
@@ -51,21 +51,18 @@ export const NAV_LINKS = [
     href: "/resources",
     menu: [
       {
-        title: "Blog",
-        tagline: "Read articles on the latest trends in tech.",
+        title: "API",
+        tagline: "Comprehensive API documentation",
         href: "/resources/blog",
         icon: NewspaperIcon,
       },
       {
-        title: "Help",
+        title: "Blogs",
         tagline: "Get answers to your questions.",
         href: "/resources/help",
         icon: HelpCircleIcon,
       },
     ],
   },
-  {
-    title: "Changelog",
-    href: "/changelog",
-  },
+
 ];
