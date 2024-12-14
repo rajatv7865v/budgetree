@@ -20,20 +20,17 @@ import Link from "next/link";
 const LinkShorteningPage = () => {
   const STATSTICS = [
     {
-      name: "Merchant Touchpoints",
+      name: "Transactions",
       count: "400K",
     },
-    {
-      name: "Countries",
-      count: "120",
-    },
+
     {
       name: "Customers",
-      count: "1M",
+      count: "2,200",
     },
     {
-      name: "Transactions",
-      count: "3M",
+      name: "Brands",
+      count: "300+",
     },
   ];
   const Stepers = [

@@ -20,20 +20,17 @@ import Link from "next/link";
 const LinkShorteningPage = () => {
   const STATSTICS = [
     {
-      name: "Merchant Touchpoints",
+      name: "Transactions",
       count: "400K",
     },
-    {
-      name: "Countries",
-      count: "120",
-    },
+
     {
       name: "Customers",
-      count: "1M",
+      count: "2,200",
     },
     {
-      name: "Transactions",
-      count: "3M",
+      name: "Brands",
+      count: "300+",
     },
   ];
   const Stepers = [
@@ -145,7 +142,7 @@ const LinkShorteningPage = () => {
           </div>
         </AnimationContainer>
         <AnimationContainer delay={0.2} className='w-full'>
-          <div className='w-full flex max-w-4xl py-10 mx-auto'>
+          <div className='w-full flex max-w-4xl py-20 mx-auto'>
             <Image
               src='/assets/shorten-links.svg'
               alt='Shorten links and track their performance'
@@ -155,8 +152,9 @@ const LinkShorteningPage = () => {
             />
           </div>
         </AnimationContainer>
-        <div className=''>
-          <h6 className='text-3xl font-semibold'>
+        <div className='py-20 mx-auto'>
+          
+          <h6 className='text-3xl font-semibold py-20 mx-auto'>
             Bounty of Benefits. Extraordinary Offers.
           </h6>
           <p className='pt-2 text-'>

@@ -38,46 +38,62 @@ import Marquee from "@/components/ui/marquee";
 const HomePage = async () => {
   const reviews = [
     {
+      logo: "/assets/integrations/zoom.jpeg",
+      title:
+        "Zoom revolutionizes video communication.",
+    },
+    {
       logo: "/assets/integrations/bamboohr.png",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "BambooHR is a leading HR software solution.",
     },
     {
       logo: "/assets/integrations/hubspot.png",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "HubSpot is an all-in-one CRM platform",
     },
     {
       logo: "/assets/integrations/salesforce.png",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
-    },
-    {
-      logo: "/assets/integrations/teams.png",
-      title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "Salesforce is a powerful CRM platform for managing customer relationships",
     },
     {
       logo: "/assets/integrations/typeform.webp",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "Typeform makes data collection engaging ",
+    },
+    {
+      logo: "/assets/integrations/teams.png",
+      title:
+        "Microsoft Teams enhances collaboration",
+    },
+    {
+      logo: "/assets/integrations/bamboohr.png",
+      title:
+        "BambooHR is a leading HR software solution.",
+    },
+    {
+      logo: "/assets/integrations/typeform.webp",
+      title:
+        "Typeform makes data collection engaging .",
     },
     {
       logo: "/assets/integrations/zapiier.webp",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "Zapier connects your apps and automates workflows.",
     },
     {
       logo: "/assets/integrations/zoho.png",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "Zoho offers a suite of cloud-based applications .",
     },
     {
       logo: "/assets/integrations/zoom.jpeg",
       title:
-        "I've never seen anything like this before. It's amazing. I love it.",
+        "Zoom revolutionizes video communication",
     },
   ];
+  
   const user = await currentUser();
   const firstRow = reviews.slice(0, reviews.length / 2);
   const secondRow = reviews.slice(reviews.length / 2);
@@ -114,7 +130,7 @@ const HomePage = async () => {
             <div className='flex items-center justify-center whitespace-nowrap gap-4 z-50'>
               <Button asChild>
                 <Link
-                  href={user ? "/dashboard" : "/auth/sign-in"}
+                  href='https://app.budgetree.in/account/get_started'
                   className='flex items-center'
                 >
                   Start creating for free
@@ -348,18 +364,17 @@ const HomePage = async () => {
         <div className='hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10'></div>
         <Container>
           <div className='max-w-md mx-auto text-start md:text-center'>
-            <MagicBadge title='Our Integrations' />
+            <MagicBadge title='Integrations' />
             <h2 className='text-3xl lg:text-4xl font-semibold mt-6'>
-              What people are saying
+             All at One Place.
             </h2>
             <p className='text-muted-foreground mt-6'>
-              See how Astra empowers businesses of all sizes. Here&apos;s what
-              real people are saying on Twitter
+Integrates with 30+ SAAS platforms.
             </p>
           </div>
         </Container>
         <Container>
-          <div className='py-10 md:py-20 w-full'>
+          <div className='py-10 md:py-10 w-full'>
             <div className='relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10'>
               <Marquee pauseOnHover className='[--duration:20s] select-none'>
                 {firstRow.map((review) => (

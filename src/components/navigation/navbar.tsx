@@ -142,7 +142,7 @@ const Navbar = () => {
                   Sign In
                 </Link>
                 <Link
-                  href='/auth/sign-up'
+                  href='https://app.budgetree.in/account/get_started/'
                   className={buttonVariants({ size: "sm" })}
                 >
                   Get Started
