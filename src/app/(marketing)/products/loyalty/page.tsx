@@ -22,12 +22,12 @@ import ContactForm from "../ContactForm";
 const LinkShorteningPage = () => {
   const STATSTICS = [
     {
-      name: "Transactions",
-      count: "400K",
+      name: "Rewards Facilitated",
+      count: "400cr ",
     },
 
     {
-      name: "Customers",
+      name: "Users",
       count: "2,200",
     },
     {
@@ -111,9 +111,9 @@ const LinkShorteningPage = () => {
       <MaxWidthWrapper>
         <AnimationContainer delay={0.1} className='w-full'>
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
-            <MagicBadge title='Simple' />
+            <MagicBadge title='LoyaltyX' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-              Unleash the power of loyalty with Budgetree's intuitive platform.
+              Unleash the power of loyalty with Budgetree's LoyaltyX platform.
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
               Simplify your workflow with powerful rewards management tools.
@@ -128,6 +128,27 @@ const LinkShorteningPage = () => {
                 <Link href='/blog'>Learn more</Link>
               </Button>
             </div>
+          </div>
+    
+        </AnimationContainer>
+
+        <AnimationContainer
+          delay={0.2}
+          className='relative md:py-32 px-2 bg-transparent w-full'
+        >
+          <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
+          <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
+            <BorderBeam size={250} duration={12} delay={9} />
+            <Image
+              src='/assets/shorten-links.svg'
+              alt='Dashboard'
+              width={1200}
+              height={1200}
+              quality={100}
+              className='rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
+            />
+            <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
+            <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8'>
             {STATSTICS.map((process: any, id: any) => (
@@ -145,32 +166,12 @@ const LinkShorteningPage = () => {
           </div>
         </AnimationContainer>
 
-        <AnimationContainer
-          delay={0.2}
-          className='relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full'
-        >
-          <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
-          <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
-            <BorderBeam size={250} duration={12} delay={9} />
-            <Image
-              src='/assets/shorten-links.svg'
-              alt='Dashboard'
-              width={1200}
-              height={1200}
-              quality={100}
-              className='rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
-            />
-            <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
-            <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
-          </div>
-        </AnimationContainer>
-
         <div className='pt-40'>
           <h6 className='text-3xl font-semibold'>
-            Bounty of Benefits. Extraordinary Offers.
+            Stack of Benefits. Extraordinary Offers.
           </h6>
           <p className='pt-2 text-'>
-            The most diverse bouquet of loyalty benefits that can be stitched
+            The most diverse range of loyalty benefits that can be stitched
             together to give you a world of options to choose from, ensuring
             that your loyalty programs are fresh, unique, personalized and
             impactful.

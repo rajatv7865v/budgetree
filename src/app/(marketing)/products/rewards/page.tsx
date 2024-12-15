@@ -146,8 +146,8 @@ const LinkShorteningPage = () => {
             <Image
               src='/assets/shorten-links.svg'
               alt='Shorten links and track their performance'
-              width={80}
-              height={80}
+              width={1000}
+              height={1000}
               className='w-full h-auto'
             />
           </div>
