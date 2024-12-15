@@ -1,5 +1,6 @@
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import Steper from "@/components/Steper";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -16,6 +17,7 @@ import { COMPANIES } from "@/utils";
 import { ArrowRightIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "../ContactForm";
 
 const LinkShorteningPage = () => {
   const STATSTICS = [
@@ -111,10 +113,15 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='LoyaltyX' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-            Transform Customer Engagement with Our Loyalty Stack
+              Transform Customer Engagement with Our Loyalty Stack
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-            Our Loyalty Stack SaaS platform empowers businesses to build deeper relationships with customers, drive repeat purchases, and unlock long-term value through personalized loyalty programs. Whether you're a retailer, service provider, or enterprise, our solution adapts to your unique needs, helping you create unforgettable customer experiences.
+              Our Loyalty Stack SaaS platform empowers businesses to build
+              deeper relationships with customers, drive repeat purchases, and
+              unlock long-term value through personalized loyalty programs.
+              Whether you're a retailer, service provider, or enterprise, our
+              solution adapts to your unique needs, helping you create
+              unforgettable customer experiences.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
@@ -125,30 +132,25 @@ const LinkShorteningPage = () => {
               </Button>
             </div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8'>
-            {STATSTICS.map((process: any, id: any) => (
-              <AnimationContainer delay={0.2 * id} key={id}>
-                <MagicCard className='group md:py-8'>
-                  <div className='flex flex-col items-center justify-center gap-2 w-full'>
-                    <h6 className='text-3xl font-bold'>{process.count}+</h6>
-                    <p className='text-lg font-heading font-semibold uppercase text-center'>
-                      {process?.name}
-                    </p>
-                  </div>
-                </MagicCard>
-              </AnimationContainer>
-            ))}
-          </div>
+          
         </AnimationContainer>
-        <AnimationContainer delay={0.2} className='w-full'>
-          <div className='w-full flex max-w-4xl py-10 mx-auto'>
+        <AnimationContainer
+          delay={0.2}
+          className='relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full'
+        >
+          <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
+          <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
+            <BorderBeam size={250} duration={12} delay={9} />
             <Image
-              src='/assets/shorten-links.svg'
-              alt='Loyalty Program'
-              width={80}
-              height={50}
-              className='w-full h-auto'
+              src='/assets/upi.svg'
+              alt='Dashboard'
+              width={1200}
+              height={1200}
+              quality={100}
+              className='rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
             />
+            <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
+            <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
           </div>
         </AnimationContainer>
         <div className=''>
@@ -313,22 +315,9 @@ const LinkShorteningPage = () => {
               </AnimationContainer>
             </div>
           </section>
-          <section className='pt-10 w-full flex items-center'>
+          <section className='pt-10 w-full flex items-center gap-20'>
             <Steper Stepers={Stepers} />
-            <AnimationContainer
-              delay={0.2}
-              className='w-full relative -right-60'
-            >
-              <div className='w-full flex max-w-4xl py-10 mx-auto'>
-                <Image
-                  src='/assets/shorten-links.svg'
-                  alt='Shorten links and track their performance'
-                  width={80}
-                  height={80}
-                  className='w-full h-auto'
-                />
-              </div>
-            </AnimationContainer>
+            <ContactForm />
           </section>
         </div>
         <AnimationContainer delay={0.3} className='w-full'>

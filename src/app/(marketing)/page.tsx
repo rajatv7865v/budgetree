@@ -395,7 +395,7 @@ Integrates with 30+ SAAS platforms.
                         />
                       </div>
                     </div>
-                    <blockquote className='mt-2 text-sm'>
+                    <blockquote className='mt-1 text-sm text-center'>
                       {review.title}
                     </blockquote>
                   </figure>
@@ -424,7 +424,7 @@ Integrates with 30+ SAAS platforms.
                         />
                       </div>
                     </div>
-                    <blockquote className='mt-2 text-sm'>
+                    <blockquote className='mt-1 text-sm text-center'>
                       {review.title}
                     </blockquote>
                   </figure>
