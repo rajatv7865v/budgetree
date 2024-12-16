@@ -48,7 +48,8 @@ const MobileNavbar = () => {
           <div className='flex flex-col items-start w-full py-2 mt-10'>
             <div className='flex items-center justify-evenly w-full space-x-2'>
               <Link
-                href='/dashboard'
+                href='https://app.budgetree.in/login/'
+                target='_blank'
                 className={buttonVariants({
                   variant: "outline",
                   className: "w-full",

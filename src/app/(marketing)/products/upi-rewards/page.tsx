@@ -113,22 +113,25 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='UPI Rewards' />
             <h1 className='text-xl md:text-3xl lg:text-3xl font-semibold font-heading text-center mt-6 !leading-tight'>
-            Unlock Seamless Rewards with Budgetree's UPI Rewards Stack.
-
+              Unlock Seamless Rewards with Budgetree's UPI Rewards Stack.
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-            UPI Rewards Stack empowers you to deliver cash rewards directly to their users through UPI.
+              UPI Rewards Stack empowers you to deliver cash rewards directly to
+              their users through UPI.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
-                <Link href='https://app.budgetree.in/account/get_started'>Get started</Link>
+                <Link href='https://app.budgetree.in/account/get_started'>
+                  Get started
+                </Link>
               </Button>
               <Button size='sm' variant='outline' asChild>
-                <Link href='https://app.budgetree.in/account/get_started'>Learn more</Link>
+                <Link href='https://app.budgetree.in/account/get_started'>
+                  Learn more
+                </Link>
               </Button>
             </div>
           </div>
-          
         </AnimationContainer>
         <AnimationContainer
           delay={0.2}
@@ -153,8 +156,8 @@ const LinkShorteningPage = () => {
           <h6 className='text-3xl font-semibold'>
             Why Choose Budgetree UPI Stack ?
           </h6>
-      
-          <section className='grid grid-cols-3 gap-4 pt-10'>
+
+          <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10'>
             <div className='flex flex-col items-start h-min gap-6'>
               <AnimationContainer delay={0.2}>
                 <MagicCard className='md:p-0 bg-white '>
@@ -164,11 +167,10 @@ const LinkShorteningPage = () => {
                         Instant gratification
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Send rewards directly to your customers' UPI accounts within seconds.
-
+                        Send rewards directly to your customers' UPI accounts
+                        within seconds.
                       </CardDescription>
                     </CardHeader>
-                 
                   </Card>
                 </MagicCard>
               </AnimationContainer>
@@ -179,13 +181,13 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                      Customizable Campaigns
+                        Customizable Campaigns
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Personalize rewards campaigns to align with your brand and target audience.
+                        Personalize rewards campaigns to align with your brand
+                        and target audience.
                       </CardDescription>
                     </CardHeader>
-             
                   </Card>
                 </MagicCard>
               </AnimationContainer>
@@ -196,15 +198,13 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                      Scalable Solutions
+                        Scalable Solutions
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Built to handle rewards distribution, whether you have hundreds or millions of users.
-
-
+                        Built to handle rewards distribution, whether you have
+                        hundreds or millions of users.
                       </CardDescription>
                     </CardHeader>
-                    
                   </Card>
                 </MagicCard>
               </AnimationContainer>
@@ -215,14 +215,13 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                      Cost-Efficient
+                        Cost-Efficient
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Reduce the overhead of traditional rewards systems with our streamlined UPI solution.
+                        Reduce the overhead of traditional rewards systems with
+                        our streamlined UPI solution.
                       </CardDescription>
                     </CardHeader>
-                    
-
                   </Card>
                 </MagicCard>
               </AnimationContainer>
@@ -233,14 +232,13 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                      User-Friendly Integration
+                        User-Friendly Integration
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Easy to integrate with your existing platforms via our secure API or dashboard.
-
+                        Easy to integrate with your existing platforms via our
+                        secure API or dashboard.
                       </CardDescription>
                     </CardHeader>
-                   
                   </Card>
                 </MagicCard>
               </AnimationContainer>
@@ -251,20 +249,20 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                      Highly Secure
+                        Highly Secure
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                      Bank-grade security ensures every transaction is safe and reliable.
-
+                        Bank-grade security ensures every transaction is safe
+                        and reliable.
                       </CardDescription>
                     </CardHeader>
-                    
                   </Card>
                 </MagicCard>
               </AnimationContainer>
             </div>
           </section>
-          <section className='pt-10 w-full flex items-center gap-20'>
+          <section className='pt-40 w-full flex flex-col md:flex-row items-center gap-8  md:gap-20'>
+            <h6 className='text-3xl font-semibold'>Get Started</h6>
             <Steper Stepers={Stepers} />
             <ContactForm />
           </section>
@@ -303,11 +301,14 @@ const LinkShorteningPage = () => {
                 Powerup your reward strategy
               </h2>
               <p className='text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg'>
-               Through instant UPI Rewards.
+                Through instant UPI Rewards.
               </p>
               <div className='mt-6'>
                 <Button asChild>
-                  <Link href='https://app.budgetree.in/account/get_started' className='flex items-center'>
+                  <Link
+                    href='https://app.budgetree.in/account/get_started'
+                    className='flex items-center'
+                  >
                     Get started for free
                     <ArrowRightIcon className='w-4 h-4 ml-2' />
                   </Link>

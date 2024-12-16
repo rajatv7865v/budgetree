@@ -129,7 +129,6 @@ const LinkShorteningPage = () => {
               </Button>
             </div>
           </div>
-    
         </AnimationContainer>
 
         <AnimationContainer
@@ -150,7 +149,7 @@ const LinkShorteningPage = () => {
             <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
             <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-2 md:py-8 gap-4 md:gap-8'>
             {STATSTICS.map((process: any, id: any) => (
               <AnimationContainer delay={0.2 * id} key={id}>
                 <MagicCard className='group md:py-8'>
@@ -166,7 +165,7 @@ const LinkShorteningPage = () => {
           </div>
         </AnimationContainer>
 
-        <div className='pt-40'>
+        <div className=' pt-20 md:pt-36 '>
           <h6 className='text-3xl font-semibold'>
             Stack of Benefits. Extraordinary Offers.
           </h6>
@@ -176,7 +175,7 @@ const LinkShorteningPage = () => {
             that your loyalty programs are fresh, unique, personalized and
             impactful.
           </p>
-          <section className='grid grid-cols-3 gap-4 pt-10'>
+          <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10'>
             <div className='flex flex-col items-start h-min gap-6'>
               <AnimationContainer delay={0.2}>
                 <MagicCard className='md:p-0 bg-white '>
@@ -326,7 +325,8 @@ const LinkShorteningPage = () => {
               </AnimationContainer>
             </div>
           </section>
-          <section className='pt-40 w-full flex items-center gap-20'>
+          <section className='pt-40 w-full flex flex-col md:flex-row items-center gap-8  md:gap-20'>
+            <h6 className='text-3xl font-semibold'>Get Started</h6>
             <Steper Stepers={Stepers} />
             <ContactForm />
           </section>

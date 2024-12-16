@@ -25,7 +25,7 @@ export const NAV_LINKS = [
       {
         title: "UPI Rewards", // https://www.sprintverify.in/kyc-verification-api.html
         tagline: "UPI Rewards stack.",
-        href: "/products/kyc360",
+        href: "/products/upi-rewards",
         icon: LockIcon,
       },
       {
@@ -64,5 +64,4 @@ export const NAV_LINKS = [
       },
     ],
   },
-
 ];

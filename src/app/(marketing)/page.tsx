@@ -39,18 +39,15 @@ const HomePage = async () => {
   const reviews = [
     {
       logo: "/assets/integrations/zoom.jpeg",
-      title:
-        "Zoom revolutionizes video communication.",
+      title: "Zoom revolutionizes video communication.",
     },
     {
       logo: "/assets/integrations/bamboohr.png",
-      title:
-        "BambooHR is a leading HR software solution.",
+      title: "BambooHR is a leading HR software solution.",
     },
     {
       logo: "/assets/integrations/hubspot.png",
-      title:
-        "HubSpot is an all-in-one CRM platform",
+      title: "HubSpot is an all-in-one CRM platform",
     },
     {
       logo: "/assets/integrations/salesforce.png",
@@ -59,8 +56,7 @@ const HomePage = async () => {
     },
     {
       logo: "/assets/integrations/typeform.webp",
-      title:
-        "Typeform makes data collection engaging ",
+      title: "Typeform makes data collection engaging ",
     },
     {
       logo: "/assets/integrations/salesforce.png",
@@ -69,31 +65,26 @@ const HomePage = async () => {
     },
     {
       logo: "/assets/integrations/bamboohr.png",
-      title:
-        "BambooHR is a leading HR software solution.",
+      title: "BambooHR is a leading HR software solution.",
     },
     {
       logo: "/assets/integrations/typeform.webp",
-      title:
-        "Typeform makes data collection engaging .",
+      title: "Typeform makes data collection engaging .",
     },
     {
       logo: "/assets/integrations/zapiier.webp",
-      title:
-        "Zapier connects your apps and automates workflows.",
+      title: "Zapier connects your apps and automates workflows.",
     },
     {
       logo: "/assets/integrations/zoho.png",
-      title:
-        "Zoho offers a suite of cloud-based applications .",
+      title: "Zoho offers a suite of cloud-based applications .",
     },
     {
       logo: "/assets/integrations/zoom.jpeg",
-      title:
-        "Zoom revolutionizes video communication",
+      title: "Zoom revolutionizes video communication",
     },
   ];
-  
+
   const user = await currentUser();
   const firstRow = reviews.slice(0, reviews.length / 2);
   const secondRow = reviews.slice(reviews.length / 2);
@@ -360,16 +351,16 @@ const HomePage = async () => {
       </MaxWidthWrapper>
 
       {/* Integration Section */}
-      <Wrapper className='flex flex-col items-center justify-center py-12 relative'>
+      <Wrapper className='flex flex-col items-center justify-center py-12 '>
         <div className='hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 -z-10'></div>
         <Container>
           <div className='max-w-md mx-auto text-start md:text-center'>
             <MagicBadge title='Integrations' />
             <h2 className='text-3xl lg:text-4xl font-semibold mt-6'>
-             All at One Place.
+              All at One Place.
             </h2>
             <p className='text-muted-foreground mt-6'>
-Integrates with 30+ SAAS platforms.
+              Integrates with 30+ SAAS platforms.
             </p>
           </div>
         </Container>
