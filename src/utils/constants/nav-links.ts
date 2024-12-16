@@ -17,7 +17,7 @@ export const NAV_LINKS = [
     href: "/products",
     menu: [
       {
-        title: "LoyaltyX", // https://thriwe.com/
+        title: "LoyaltyX", // https:// .com/
         tagline: "Loyalty Stack for engagement",
         href: "/products/loyalty",
         icon: Link2Icon,

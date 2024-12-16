@@ -111,11 +111,11 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='Simple' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-              Shorten links and track their performance
+              Send rewards and track their performance
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-              Simplify your workflow with powerful link management tools.
-              Shorten links, track clicks, and optimize your strategy with ease.
+              Simplify your workflow with powerful reward management tools.
+              send rewadrs, track clicks, and optimize your strategy with ease.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
@@ -145,7 +145,7 @@ const LinkShorteningPage = () => {
           <div className='w-full flex max-w-4xl py-10 mx-auto'>
             <Image
               src='/assets/shorten-links.svg'
-              alt='Shorten links and track their performance'
+              alt=' Send rewards and track their performance'
               width={1000}
               height={1000}
               className='w-full h-auto'
@@ -169,7 +169,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Voyage : Travel Benefits
+                          Voyage : Travel Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Elevating every journey into a premium travel experience
@@ -194,7 +194,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Culinary : Dining Benefits
+                          Culinary : Dining Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Global culinary experiences with a depth of local
@@ -218,7 +218,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Activ : Sports Benefits
+                          Activ : Sports Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Give your esteemed partners a gift of fitness,
@@ -244,7 +244,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Care : Healthcare Benefits
+                          Care : Healthcare Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Care, comfort and convenience - everything is easily
@@ -269,7 +269,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Aspire : Lifestyle Benefits
+                          Aspire : Lifestyle Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Delight in knowing that your valued stakeholders'
@@ -294,7 +294,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Thriwe Digi : Digital Benefits
+                          Digi : Digital Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Designed for the tech-savvy customer who's always
@@ -323,7 +323,7 @@ const LinkShorteningPage = () => {
               <div className='w-full flex max-w-4xl py-10 mx-auto'>
                 <Image
                   src='/assets/shorten-links.svg'
-                  alt='Shorten links and track their performance'
+                  alt=' Send rewards and track their performance'
                   width={80}
                   height={80}
                   className='w-full h-auto'
@@ -363,7 +363,7 @@ const LinkShorteningPage = () => {
           <LampContainer className='max-w-2xl mx-auto'>
             <div className='flex flex-col items-center justify-center relative w-full text-center'>
               <h2 className='bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8'>
-                Powerup your link strategy
+                Powerup your reward strategy
               </h2>
               <p className='text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg'>
                 Take control of your links with advanced features and real-time

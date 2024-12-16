@@ -63,9 +63,9 @@ const HomePage = async () => {
         "Typeform makes data collection engaging ",
     },
     {
-      logo: "/assets/integrations/teams.png",
+      logo: "/assets/integrations/salesforce.png",
       title:
-        "Microsoft Teams enhances collaboration",
+        "Salesforce is a powerful CRM platform for managing customer relationships",
     },
     {
       logo: "/assets/integrations/bamboohr.png",

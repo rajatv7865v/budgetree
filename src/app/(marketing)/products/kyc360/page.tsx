@@ -117,7 +117,7 @@ const LinkShorteningPage = () => {
 
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-            UPI Rewards Stack empowers you to deliver cash rewards directly to their users through UPI, creating a frictionless experience for both sender and recipient. Whether you’re driving engagement, boosting sales, or incentivizing loyalty, our stack offers unparalleled ease and flexibility
+            UPI Rewards Stack empowers you to deliver cash rewards directly to their users through UPI.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
