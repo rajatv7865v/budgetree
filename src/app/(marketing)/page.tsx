@@ -379,7 +379,7 @@ const HomePage = async () => {
                     <div className='flex flex-row items-center justify-center '>
                       {/* <UserIcon className='w-6 h-6' /> */}
                       <div className=' rounded-full w-[90px] h-[90px] flex items-center justify-center'>
-                        <img
+                        <Image
                           src={review.logo}
                           alt='logo'
                           className='w-full  object-fill hover:scale-90 zoom-in-150'
@@ -408,7 +408,7 @@ const HomePage = async () => {
                     <div className='flex flex-row items-center justify-center '>
                       {/* <UserIcon className='w-6 h-6' /> */}
                       <div className=' rounded-full w-[90px] h-[90px] flex items-center justify-center'>
-                        <img
+                        <Image
                           src={review.logo}
                           alt='logo'
                           className='w-full  object-fill hover:scale-90 zoom-in-150'

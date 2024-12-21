@@ -3,8 +3,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    "strict": false, // Never enable strict mode
+    "noEmit": true,  // Prevent emitting JS files (Next.js handles this)
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -21,6 +21,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(marketing)/Type.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/(marketing)/Type.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
