@@ -10,7 +10,8 @@ const DashboardPage = () => {
 
   //   const { user, signOut } = useClerk();
 
-  return (
+  return ( 
+    
     <div className='flex flex-col items-center justify-center h-screen'>
       {/* <h1 className="text-xl font-medium">
                 Welcome {user?.firstName}!
