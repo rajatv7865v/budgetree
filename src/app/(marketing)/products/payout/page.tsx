@@ -16,6 +16,7 @@ import { COMPANIES } from "@/utils";
 import { ArrowRightIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "../ContactForm";
 
 const LinkShorteningPage = () => {
   const STATSTICS = [
@@ -111,10 +112,12 @@ const LinkShorteningPage = () => {
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
             <MagicBadge title='Simple' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-            Transform Customer Engagement with Our Loyalty Stack 
+              Simplifying collections and payments for your Business
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-            Our Loyalty Stack SaaS platform empowers businesses to build deeper relationships with customers, drive repeat purchases, and unlock long-term value through personalized loyalty programs. Whether you're a retailer, service provider, or enterprise, our solution adapts to your unique needs, helping you create unforgettable customer experiences.
+              The all-in-one banking solution for frictionless payments.
+              Processing over ₹120 crores daily, enabling businesses in India to
+              grow.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
@@ -143,16 +146,15 @@ const LinkShorteningPage = () => {
         <AnimationContainer delay={0.2} className='w-full'>
           <div className='w-full flex max-w-4xl py-20 mx-auto'>
             <Image
-              src='/assets/shorten-links.svg'
+              src='/assets/integrations/payout.png'
               alt=' Send rewards and track their performance'
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               className='w-full h-auto'
             />
           </div>
         </AnimationContainer>
         <div className='py-20 mx-auto'>
-          
           <h6 className='text-3xl font-semibold py-20 mx-auto'>
             Bounty of Benefits. Extraordinary Offers.
           </h6>
@@ -169,7 +171,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Voyage : Travel Benefits
+                        Voyage : Travel Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Elevating every journey into a premium travel experience
@@ -194,7 +196,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Culinary : Dining Benefits
+                        Culinary : Dining Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Global culinary experiences with a depth of local
@@ -218,7 +220,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Activ : Sports Benefits
+                        Activ : Sports Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Give your esteemed partners a gift of fitness,
@@ -244,7 +246,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Care : Healthcare Benefits
+                        Care : Healthcare Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Care, comfort and convenience - everything is easily
@@ -269,7 +271,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Aspire : Lifestyle Benefits
+                        Aspire : Lifestyle Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Delight in knowing that your valued stakeholders'
@@ -294,7 +296,7 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                          Digi : Digital Benefits
+                        Digi : Digital Benefits
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Designed for the tech-savvy customer who's always
@@ -314,22 +316,13 @@ const LinkShorteningPage = () => {
               </AnimationContainer>
             </div>
           </section>
-          <section className='pt-10 w-full flex items-center'>
-            <Steper Stepers={Stepers} />
-            <AnimationContainer
-              delay={0.2}
-              className='w-full relative -right-60'
-            >
-              <div className='w-full flex max-w-4xl py-10 mx-auto'>
-                <Image
-                  src='/assets/shorten-links.svg'
-                  alt=' Send rewards and track their performance'
-                  width={80}
-                  height={80}
-                  className='w-full h-auto'
-                />
-              </div>
-            </AnimationContainer>
+          <section className='pt-40 w-full flex flex-col md:flex-row items-center gap-8  md:gap-20'>
+            <div className='flex flex-col gap-10'>
+              {" "}
+              <h6 className='text-3xl font-semibold'>Get Started</h6>
+              <Steper Stepers={Stepers} />
+            </div>
+            <ContactForm />
           </section>
         </div>
         <AnimationContainer delay={0.3} className='w-full'>
@@ -366,8 +359,8 @@ const LinkShorteningPage = () => {
                 Powerup your reward strategy
               </h2>
               <p className='text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg'>
-                Take control of your rewards with advanced features and real-time
-                insights. Simplify your workflow and achieve more.
+                Take control of your rewards with advanced features and
+                real-time insights. Simplify your workflow and achieve more.
               </p>
               <div className='mt-6'>
                 <Button asChild>

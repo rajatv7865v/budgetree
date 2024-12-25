@@ -262,8 +262,10 @@ const LinkShorteningPage = () => {
             </div>
           </section>
           <section className='pt-40 w-full flex flex-col md:flex-row items-center gap-8  md:gap-20'>
-            <h6 className='text-3xl font-semibold'>Get Started</h6>
-            <Steper Stepers={Stepers} />
+            <div className='flex flex-col gap-10'>
+              <h6 className='text-3xl font-semibold'>Get Started</h6>
+              <Steper Stepers={Stepers} />
+            </div>
             <ContactForm />
           </section>
         </div>
