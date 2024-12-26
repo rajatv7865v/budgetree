@@ -382,6 +382,8 @@ const HomePage = async () => {
                         <Image
                           src={review.logo}
                           alt='logo'
+                          width={100}
+                          height={100}
                           className='w-full  object-fill hover:scale-90 zoom-in-150'
                         />
                       </div>
@@ -411,6 +413,8 @@ const HomePage = async () => {
                         <Image
                           src={review.logo}
                           alt='logo'
+                          width={100}
+                          height={100}
                           className='w-full  object-fill hover:scale-90 zoom-in-150'
                         />
                       </div>

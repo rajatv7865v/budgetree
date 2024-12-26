@@ -36,70 +36,115 @@ const LinkShorteningPage = () => {
   ];
   const Stepers = [
     {
-      name: "Program Design",
+      name: " NEFT/IMPS payout, bulk transfer",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
-            <b className='text-[#204BA2]'>Goal and outcome </b>planning of the
-            program.
+            <b className='text-[#204BA2]'>
+              Process NEFT/IMPS payouts quickly and securely.
+            </b>
           </li>
           <li>
-            Mapping relevant offers by{" "}
-            <b className='text-[#204BA2]'> demographic, industry & region.</b>{" "}
+            <b className='text-[#204BA2]'>
+              {" "}
+              Seamless bulk transfers with minimal effort.
+            </b>{" "}
           </li>
           <li>
-            Explore <b className='text-[#204BA2]'>redemption models</b> based on
-            the current stack & end goals.
+            <b className='text-[#204BA2]'>
+              Reliable and efficient for large-scale transactions.
+            </b>{" "}
           </li>
           <li>
-            Final deliverables, project plan and{" "}
-            <b className='text-[#204BA2]'>client sign-offs.</b>
+            <b className='text-[#204BA2]'>
+              Reliable and efficient for large-scale transactions.
+            </b>
           </li>
         </ul>
       ),
     },
     {
-      name: "Solution Development",
+      name: "UPI payouts",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
             {" "}
-            <b className='text-[#204BA2]'>Onboarding</b> new{" "}
-            <b className='text-[#204BA2]'> merchant and offers.</b>
+            <b className='text-[#204BA2]'>
+              Send UPI payouts instantly and securely.
+            </b>
           </li>
           <li>
-            Developing{" "}
-            <b className='text-[#204BA2]'> customized tech solution.</b>{" "}
+            <b className='text-[#204BA2]'>
+              {" "}
+              Fast, reliable, and hassle-free transactions.
+            </b>{" "}
           </li>
           <li>
             {" "}
-            <b className='text-[#204BA2]'> Train & prepare</b> operations and
-            customer service teams.
+            <b className='text-[#204BA2]'>
+              {" "}
+              Seamless payouts to multiple recipients anytime.
+            </b>{" "}
           </li>
           <li>
-            Quality checks and <b className='text-[#204BA2]'>program launch.</b>
+            <b className='text-[#204BA2]'>
+              Track and manage UPI payouts effortlessly.
+            </b>
           </li>
         </ul>
       ),
     },
     {
-      name: "Quality checks and program launch",
+      name: " Bharat connect bill payments",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
-            Ensure <b className='text-[#204BA2]'>data security</b> / follow all
-            data protocols.
+            <b className='text-[#204BA2]'>
+              Pay bills seamlessly with Bharat Connect.
+            </b>
           </li>
           <li>
-            Regular <b className='text-[#204BA2]'>tech upgrades.</b>
+            <b className='text-[#204BA2]'>
+              Quick, secure, and hassle-free transactions.
+            </b>
           </li>
           <li>
-            Booking and{" "}
-            <b className='text-[#204BA2]'> redemption management.</b>{" "}
+            <b className='text-[#204BA2]'>
+              {" "}
+              Access multiple billers in one platform.
+            </b>{" "}
           </li>
           <li>
-            Periodic reporting &{" "}
-            <b className='text-[#204BA2]'>customer support.</b>
+            <b className='text-[#204BA2]'>
+              Track and manage payments effortlessly.
+            </b>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      name: "Track Payouts",
+      discriptions: (
+        <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
+          <li>
+            <b className='text-[#204BA2]'>
+              Monitor payouts in real-time effortlessly.
+            </b>
+          </li>
+          <li>
+            <b className='text-[#204BA2]'>
+              Get detailed reports for every transaction.
+            </b>
+          </li>
+          <li>
+            <b className='text-[#204BA2]'>
+              Ensure transparency with accurate payout tracking.
+            </b>{" "}
+          </li>
+          <li>
+            <b className='text-[#204BA2]'>
+              Stay updated on payouts anytime, anywhere.
+            </b>
           </li>
         </ul>
       ),

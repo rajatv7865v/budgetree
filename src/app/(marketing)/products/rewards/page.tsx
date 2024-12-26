@@ -36,70 +36,86 @@ const LinkShorteningPage = () => {
   ];
   const Stepers = [
     {
-      name: "Program Design",
+      name: "Get onboarded with KYC",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
-            <b className='text-[#204BA2]'>Goal and outcome </b>planning of the
-            program.
+            <b className='text-[#204BA2]'>Secure and hassle-free </b>KYC
+            verification process.
           </li>
           <li>
-            Mapping relevant offers by{" "}
-            <b className='text-[#204BA2]'> demographic, industry & region.</b>{" "}
+            <b className='text-[#204BA2]'>
+              {" "}
+              Access 1M+ rewards instantly after verification.
+            </b>{" "}
           </li>
           <li>
-            Explore <b className='text-[#204BA2]'>redemption models</b> based on
-            the current stack & end goals.
+            <b className='text-[#204BA2]'>
+              Ensures compliance for safe and transparent transactions.
+            </b>
           </li>
           <li>
-            Final deliverables, project plan and{" "}
-            <b className='text-[#204BA2]'>client sign-offs.</b>
+            <b className='text-[#204BA2]'>
+              Quick onboarding with minimal effort required..
+            </b>
           </li>
         </ul>
       ),
     },
     {
-      name: "Solution Development",
+      name: "Load your wallet",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
             {" "}
-            <b className='text-[#204BA2]'>Onboarding</b> new{" "}
-            <b className='text-[#204BA2]'> merchant and offers.</b>
+            <b className='text-[#204BA2]'>
+              Securely load your wallet in minutes.
+            </b>{" "}
           </li>
           <li>
-            Developing{" "}
-            <b className='text-[#204BA2]'> customized tech solution.</b>{" "}
+            <b className='text-[#204BA2]'>
+              Access 1M+ rewards after wallet load.
+            </b>{" "}
           </li>
           <li>
             {" "}
-            <b className='text-[#204BA2]'> Train & prepare</b> operations and
-            customer service teams.
+            <b className='text-[#204BA2]'>
+              {" "}
+              Fast, easy, and reliable payment options.
+            </b>
           </li>
           <li>
-            Quality checks and <b className='text-[#204BA2]'>program launch.</b>
+            <b className='text-[#204BA2]'>
+              Start redeeming instantly with loaded wallet.
+            </b>
           </li>
         </ul>
       ),
     },
     {
-      name: "Quality checks and program launch",
+      name: "Send rewards directly or through Automation",
       discriptions: (
         <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
           <li>
-            Ensure <b className='text-[#204BA2]'>data security</b> / follow all
-            data protocols.
+            <b className='text-[#204BA2]'>
+              Send rewards instantly with just one click.
+            </b>{" "}
           </li>
           <li>
-            Regular <b className='text-[#204BA2]'>tech upgrades.</b>
+            <b className='text-[#204BA2]'>
+              Automate rewards distribution for effortless management.
+            </b>
           </li>
           <li>
-            Booking and{" "}
-            <b className='text-[#204BA2]'> redemption management.</b>{" "}
+            <b className='text-[#204BA2]'>
+              {" "}
+              Seamless delivery to recipients every time.
+            </b>{" "}
           </li>
           <li>
-            Periodic reporting &{" "}
-            <b className='text-[#204BA2]'>customer support.</b>
+            <b className='text-[#204BA2]'>
+              Save time with reliable automated processes.
+            </b>
           </li>
         </ul>
       ),
@@ -170,14 +186,12 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Xoxo Reward Points
+                        Reward Points
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Offer unique points that are linked directly to the
                         recipient’s email id or phone number and get accumulated
-                        automatically every time it is distributed. Offer
-                        recipients the freedom to redeem their points all at
-                        once or redeem them in parts from 1mn+ reward points
+                        automatically.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -197,14 +211,12 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Xoxo Reward Codes
+                        Reward Codes
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Offer unique reward codes and allow the recipients to
                         partially redeem or club multiple codes to redeem a
-                        bigger reward. Launch campaigns with a unique landing
-                        page and rewards catalog, and easily configure the
-                        expiry date.
+                        bigger reward.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -224,14 +236,12 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Xoxo Reward Links
+                        Reward Links
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Send unique reward links with chosen reward options and
                         value via email or SMS, and empower recipients to easily
-                        redeem their reward from a wide range of global brands.
-                        The recipients can choose from the relevant options
-                        without any login or registration.
+                        redeem.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -256,8 +266,7 @@ const LinkShorteningPage = () => {
                       <CardDescription className='text-neutral-600'>
                         Headless API that enables users to redeem from thousands
                         of exciting options across gift cards, experiences,
-                        merchandise, travel, dining, and more. Get complete
-                        control over the rewards.
+                        merchandise, travel, dining, and more.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -282,8 +291,7 @@ const LinkShorteningPage = () => {
                       <CardDescription className='text-neutral-600'>
                         E-commerce rewards solution with prebuilt UX and
                         checkout capabilities that delivers an exciting reward
-                        redemption experience within minutes by plugging our
-                        global rewards marketplace into your application. 
+                        redemption experience within minutes by plugging.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
@@ -307,9 +315,8 @@ const LinkShorteningPage = () => {
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
                         Headless API that empowers users with an in-app
-                        experience to redeem from 1m+ exciting options across
-                        gift cards, experiences, merchandise, travel, dining,
-                        and more. Get a responsive web and mobile infrastructure.
+                        experience to redeem from 1M+ exciting options across
+                        gift cards, rewards, and experiences globally.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
