@@ -17,12 +17,13 @@ import { ArrowRightIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../ContactForm";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const LinkShorteningPage = () => {
   const STATSTICS = [
     {
-      name: "Transactions",
-      count: "400K",
+      name: "Transactions worth",
+      count: "400 cr",
     },
 
     {
@@ -31,7 +32,7 @@ const LinkShorteningPage = () => {
     },
     {
       name: "Brands",
-      count: "300+",
+      count: "350",
     },
   ];
   const Stepers = [
@@ -46,7 +47,7 @@ const LinkShorteningPage = () => {
           <li>
             <b className='text-[#204BA2]'>
               {" "}
-              Access 1M+ rewards instantly after verification.
+              Access 350+ rewards instantly after verification.
             </b>{" "}
           </li>
           <li>
@@ -74,7 +75,7 @@ const LinkShorteningPage = () => {
           </li>
           <li>
             <b className='text-[#204BA2]'>
-              Access 1M+ rewards after wallet load.
+              Access 350+ rewards after wallet load.
             </b>{" "}
           </li>
           <li>
@@ -158,17 +159,36 @@ const LinkShorteningPage = () => {
             ))}
           </div>
         </AnimationContainer>
-        <AnimationContainer delay={0.2} className='w-full'>
-          <div className='w-full flex max-w-4xl py-10 mx-auto'>
-            <Image
-              src='/assets/dashboard.png'
-              alt=' Send rewards and track their performance'
-              width={1000}
-              height={1000}
-              className='w-full h-auto'
-            />
-          </div>
-        </AnimationContainer>
+        <AnimationContainer
+  delay={0.2}
+  className='relative pt-10 pb-10 md:py-20 px-2 bg-transparent w-full'
+>
+  {/* Glowing Background */}
+  <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
+  
+  {/* Content Container */}
+  <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
+    {/* Border Beam Animation */}
+    <BorderBeam size={250} duration={12} delay={9} />
+    
+    {/* Image */}
+    <div className='w-full flex max-w-4xl py-10 mx-auto'>
+      <Image
+        src='/assets/dashboard.png'
+        alt='Send rewards and track their performance'
+        width={1000}
+        height={1000}
+        quality={100}
+        className='w-full h-auto rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
+      />
+    </div>
+    
+    {/* Gradient Overlay */}
+    <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
+    <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
+  </div>
+</AnimationContainer>
+
         <div className=''>
           <h6 className='text-3xl font-semibold'>
             Distribute rewards and incentives the way you want.

@@ -17,12 +17,13 @@ import { ArrowRightIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../ContactForm";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const LinkShorteningPage = () => {
   const STATSTICS = [
     {
       name: "Transactions",
-      count: "400K",
+      count: "400cr",
     },
 
     {
@@ -30,8 +31,8 @@ const LinkShorteningPage = () => {
       count: "2,200",
     },
     {
-      name: "Brands",
-      count: "300+",
+      name: "Transactions",
+      count: "8000",
     },
   ];
   const Stepers = [
@@ -57,7 +58,7 @@ const LinkShorteningPage = () => {
           </li>
           <li>
             <b className='text-[#204BA2]'>
-              Reliable and efficient for large-scale transactions.
+              Simple and Secure Payment system
             </b>
           </li>
         </ul>
@@ -160,9 +161,9 @@ const LinkShorteningPage = () => {
               Simplifying collections and payments for your Business
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-              The all-in-one banking solution for frictionless payments.
-              Processing over ₹120 crores daily, enabling businesses in India to
-              grow.
+            Empower your business with our all-in-one payouts stack,
+             designed to make financial transactions seamless, efficient, and secure.
+              Whether it's vendor payments, employee payouts, or bill settlements, Budgetree has you covered.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
@@ -188,26 +189,41 @@ const LinkShorteningPage = () => {
             ))}
           </div>
         </AnimationContainer>
-        <AnimationContainer delay={0.2} className='w-full'>
-          <div className='w-full flex max-w-4xl py-20 mx-auto'>
-            <Image
-              src='/assets/integrations/payout.png'
-              alt=' Send rewards and track their performance'
-              width={60}
-              height={60}
-              className='w-full h-auto'
-            />
-          </div>
-        </AnimationContainer>
+        <AnimationContainer
+  delay={0.2}
+  className='relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full'
+>
+  {/* Glowing Background */}
+  <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
+  
+  {/* Content Container */}
+  <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
+    {/* Border Beam Animation */}
+    <BorderBeam size={250} duration={12} delay={9} />
+    
+    {/* Image */}
+    <Image
+      src='/assets/integrations/payout.png'
+      alt='Payout Stack'
+      width={1200}
+      height={700}
+      quality={100}
+      className='rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
+    />
+    
+    {/* Gradient Overlay */}
+    <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
+    <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
+  </div>
+</AnimationContainer>
+
+
         <div className='py-20 mx-auto'>
           <h6 className='text-3xl font-semibold py-20 mx-auto'>
-            Bounty of Benefits. Extraordinary Offers.
+            Seamless Payments. Extraordinary Offers.
           </h6>
           <p className='pt-2 text-'>
-            The most diverse bouquet of loyalty benefits that can be stitched
-            together to give you a world of options to choose from, ensuring
-            that your loyalty programs are fresh, unique, personalized and
-            impactful.
+           Our Payout stack includes NEFT/IMPS and UPI payments. We also enable bill payments through Bhrat connect platform.
           </p>
           <section className='grid grid-cols-3 gap-4 pt-10'>
             <div className='flex flex-col items-start h-min gap-6'>
@@ -216,19 +232,18 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Voyage : Travel Benefits
+                        NEFT/IMPS payouts
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Elevating every journey into a premium travel experience
-                        for your valued stakeholders
+                      Fast and reliable bank transfers, tailored to meet your business needs.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Airport Transfers</li>
-                        <li>Airport Dining</li>
-                        <li>Priority Check-ins</li>
-                        <li>Airport Lounge Access</li>
+                        <li>Transfer funds instantly</li>
+                        <li>Enjoy 24/7 availability</li>
+                        <li>Safe and secure transactions</li>
+                        
                       </ul>
                     </CardContent>
                   </Card>
@@ -241,18 +256,17 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Culinary : Dining Benefits
+                      Direct UPI Payouts
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Global culinary experiences with a depth of local
-                        flavors, served with the dash of convenience
+                      Enable instant payments with just a UPI ID or mobile number.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Deals & Offers</li>
-                        <li>Digital Voucher</li>
-                        <li>Offline & Retail Card Offers</li>
+                        <li>Hassle-free transfers to individuals</li>
+                        <li>Real-time processing</li>
+                        <li>Cost-effective solution</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -265,20 +279,17 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Activ : Sports Benefits
+                      Bill Payments
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Give your esteemed partners a gift of fitness,
-                        camaraderie and sportsmanship with enhanced access to
-                        global sporting facilities
+                      Manage all your business expenses from one place
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Golf Games & Coaching</li>
-                        <li>Football Coaching</li>
-                        <li>Basketball Coaching</li>
-                        <li>Access Best Fitness Centers</li>
+                        <li>Pay utility, telecom, and other bills</li>
+                        <li>Automated reminders for due dates</li>
+                        <li>Simplified tracking and reconciliation</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -291,19 +302,18 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Care : Healthcare Benefits
+                      Bulk Payouts
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Care, comfort and convenience - everything is easily
-                        accessible for your customer
+                      Save time with our streamlined bulk payment solution.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Doctor On Call</li>
-                        <li>Senior Care</li>
-                        <li>24/7 Ambulance</li>
-                        <li>Pharmacy</li>
+                        <li>Upload payment lists</li>
+                        <li>Automate repetitive payouts</li>
+                        <li>Reduce errors with a validated payment process</li>
+                       
                       </ul>
                     </CardContent>
                   </Card>
@@ -316,19 +326,17 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Aspire : Lifestyle Benefits
+                      Payment Scheduling
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Delight in knowing that your valued stakeholders'
-                        wellbeing is nurtured, their leisure is exquisite, and
-                        their loyalty is unwavering.
+                      Never miss a payment deadline again with scheduling.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Elite Spa Sessions</li>
-                        <li>Yoga Sessions</li>
-                        <li>HighStreet Shopping Offers</li>
+                        <li>Schedule one-time or recurring payments.</li>
+                        <li>Optimize cash flow management </li>
+                        <li>Notifications for pending or completed payouts.</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -341,19 +349,18 @@ const LinkShorteningPage = () => {
                   <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
                     <CardHeader className='space-y-0'>
                       <CardTitle className='text-lg text-neutral-600 font-medium '>
-                        Digi : Digital Benefits
+                      Real-Time Payment Dashboard
                       </CardTitle>
                       <CardDescription className='text-neutral-600'>
-                        Designed for the tech-savvy customer who's always
-                        on-the-go
+                      Gain full visibility and control over your transactions.
                       </CardDescription>
                     </CardHeader>
                     <CardContent className='space-y-2 pb-4'>
                       <ul className='text-neutral-600 list-disc text-sm'>
-                        <li>Streaming Apps</li>
-                        <li>Online Shopping Perks</li>
-                        <li>Online Food & Essentials Ordering</li>
-                        <li>Gaming Platform Offers</li>
+                        <li>Monitor all payouts</li>
+                        <li>Generate detailed reports for compliance</li>
+                        <li>Intuitive UI for hassle-free navigation</li>
+                       
                       </ul>
                     </CardContent>
                   </Card>
