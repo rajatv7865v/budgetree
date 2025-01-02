@@ -69,7 +69,7 @@ const Footer = () => {
                 <ul className='mt-4 text-sm text-muted-foreground'>
                   <li className=''>
                     <Link
-                      href=''
+                      href='https://www.facebook.com/Budgetree/'
                       className='hover:text-foreground transition-all duration-300'
                     >
                       Facebook
@@ -77,23 +77,16 @@ const Footer = () => {
                   </li>
                   <li className='mt-2'>
                     <Link
-                      href=''
+                      href='https://www.instagram.com/budgetree/?hl=en'
                       className='hover:text-foreground transition-all duration-300'
                     >
                       Instagram
                     </Link>
                   </li>
+             
                   <li className='mt-2'>
                     <Link
-                      href=''
-                      className='hover:text-foreground transition-all duration-300'
-                    >
-                      Twitter
-                    </Link>
-                  </li>
-                  <li className='mt-2'>
-                    <Link
-                      href=''
+                      href='https://in.linkedin.com/company/budgetreeofficial'
                       className='hover:text-foreground transition-all duration-300'
                     >
                       LinkedIn
