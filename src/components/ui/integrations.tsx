@@ -16,7 +16,6 @@ import { COMPANIES } from "@/utils";
 import { ArrowRightIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "../products/ContactForm";
 import { BorderBeam } from "@/components/ui/border-beam";
 
 const index = () => {
