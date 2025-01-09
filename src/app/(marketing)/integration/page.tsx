@@ -37,139 +37,125 @@ const index = () => {
   ];
   const Stepers = [
     {
-      name: " NEFT/IMPS payout, bulk transfer",
+      name: "OAuth 2.0 Authentication",
       discriptions: (
-        <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
           <li>
-            <b className='text-[#204BA2]'>
-              Process NEFT/IMPS payouts quickly and securely.
+            <b className="text-[#204BA2]">
+              Connect securely with third-party apps using OAuth 2.0.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              {" "}
-              Seamless bulk transfers with minimal effort.
-            </b>{" "}
+            <b className="text-[#204BA2]">
+              Enable seamless integration without sharing sensitive credentials.
+            </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Reliable and efficient for large-scale transactions.
-            </b>{" "}
+            <b className="text-[#204BA2]">
+              Provide users with secure and consent-based access.
+            </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>Simple and Secure Payment system</b>
+            <b className="text-[#204BA2]">Streamlined and efficient authentication process.</b>
           </li>
         </ul>
       ),
     },
     {
-      name: "UPI payouts",
+      name: "Zapier Workflows",
       discriptions: (
-        <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
           <li>
-            {" "}
-            <b className='text-[#204BA2]'>
-              Send UPI payouts instantly and securely.
+            <b className="text-[#204BA2]">
+              Automate rewards and tasks with pre-built Zapier workflows.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              {" "}
-              Fast, reliable, and hassle-free transactions.
-            </b>{" "}
-          </li>
-          <li>
-            {" "}
-            <b className='text-[#204BA2]'>
-              {" "}
-              Seamless payouts to multiple recipients anytime.
-            </b>{" "}
-          </li>
-          <li>
-            <b className='text-[#204BA2]'>
-              Track and manage UPI payouts effortlessly.
+            <b className="text-[#204BA2]">
+              Connect with over 5,000+ apps for seamless data integration.
             </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Save time by automating repetitive processes.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">Easy setup with no coding required.</b>
           </li>
         </ul>
       ),
     },
     {
-      name: " Bharat connect bill payments",
+      name: "API-based Data Integration",
       discriptions: (
-        <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
           <li>
-            <b className='text-[#204BA2]'>
-              Pay bills seamlessly with Bharat Connect.
+            <b className="text-[#204BA2]">
+              Integrate seamlessly using RESTful APIs.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Quick, secure, and hassle-free transactions.
+            <b className="text-[#204BA2]">
+              Fetch and push data from connected applications effortlessly.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              {" "}
-              Access multiple billers in one platform.
-            </b>{" "}
+            <b className="text-[#204BA2]">
+              Ensure real-time data sync between systems.
+            </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Track and manage payments effortlessly.
-            </b>
+            <b className="text-[#204BA2]">Customizable integration for unique workflows.</b>
           </li>
         </ul>
       ),
     },
     {
-      name: "Track Payouts",
+      name: "Rewards Automation",
       discriptions: (
-        <ul className='list-disc pt-3 text-sm text-neutral-500 space-y-1'>
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
           <li>
-            <b className='text-[#204BA2]'>
-              Monitor payouts in real-time effortlessly.
+            <b className="text-[#204BA2]">
+              Automate client rewards using integrated systems.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Get detailed reports for every transaction.
+            <b className="text-[#204BA2]">
+              Trigger one-to-one or bulk rewards with ease.
             </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Ensure transparency with accurate payout tracking.
-            </b>{" "}
+            <b className="text-[#204BA2]">
+              Customize reward triggers based on user-defined actions.
+            </b>
           </li>
           <li>
-            <b className='text-[#204BA2]'>
-              Stay updated on payouts anytime, anywhere.
-            </b>
+            <b className="text-[#204BA2]">Ensure timely and accurate reward delivery.</b>
           </li>
         </ul>
       ),
     },
   ];
+  
   return (
     <>
       <MaxWidthWrapper>
         <AnimationContainer delay={0.1} className='w-full'>
           <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
-            <MagicBadge title='Simple' />
+            <MagicBadge title='Integrations' />
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
-              Simplifying collections and payments for your Business
+              Connect your Apps With Budgetree Integrations
             </h1>
             <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
-              Empower your business with our all-in-one payouts stack, designed
-              to make financial transactions seamless, efficient, and secure.
-              Whether it's vendor payments, employee payouts, or bill
-              settlements, Budgetree has you covered.
+            Seamlessly integrate your enterprise applications with the Budgetree platform and enable end-to-end Rewards, Incentives, Payouts, Loyalty & Commissions automation.
             </p>
             <div className='flex items-center justify-center gap-x-4 mt-8'>
               <Button size='sm' asChild>
-                <Link href='/dashboard'>Get started</Link>
+                <Link href='https://integrations.budgetree.in'>Get started</Link>
               </Button>
               <Button size='sm' variant='outline' asChild>
-                <Link href='/blog'>Learn more</Link>
+                <Link href='https://integrations.budgetree.in'>Learn more</Link>
               </Button>
             </div>
           </div>
@@ -218,11 +204,10 @@ const index = () => {
 
         <div className='py-4 md:py-20 mx-auto'>
           <h6 className='text-3xl font-semibold py-4 md:py-20 mx-auto'>
-            Seamless Payments. Extraordinary Offers.
+           30 + Integrations
           </h6>
           <p className='pt-2 text-'>
-            Our Payout stack includes NEFT/IMPS and UPI payments. We also enable
-            bill payments through Bhrat connect platform.
+          Seamlessly integrate your enterprise applications with the Budgetree platform.
           </p>
           <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10'>
             <div className='flex flex-col items-start h-min gap-6'>
