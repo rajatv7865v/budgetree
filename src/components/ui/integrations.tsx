@@ -1,284 +1,416 @@
-"use client";
+import { AnimationContainer, MaxWidthWrapper } from "@/components";
+import Steper from "@/components/Steper";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { LampContainer } from "@/components/ui/lamp";
+import MagicBadge from "@/components/ui/magic-badge";
+import MagicCard from "@/components/ui/magic-card";
+import { COMPANIES } from "@/utils";
+import { ArrowRightIcon, StarIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import ContactForm from "../products/ContactForm";
+import { BorderBeam } from "@/components/ui/border-beam";
 
-import { cn } from "@/utils";
-import { AnimatedBeam } from "@/components/ui/animated-beam";
-import { LucideProps } from "lucide-react";
-import React, { forwardRef, useRef } from "react";
+const index = () => {
+  const STATSTICS = [
+    {
+      name: "Transactions",
+      count: "400cr",
+    },
 
-const Circle = forwardRef<
-  HTMLDivElement,
-  { className?: string; children?: React.ReactNode }
->(function Circle({ className, children }, ref) {
+    {
+      name: "Customers",
+      count: "2,200",
+    },
+    {
+      name: "Transactions",
+      count: "8000",
+    },
+  ];
+  const Stepers = [
+    {
+      name: "OAuth 2.0 Authentication",
+      discriptions: (
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
+          <li>
+            <b className="text-[#204BA2]">
+              Connect securely with third-party apps using OAuth 2.0.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Enable seamless integration without sharing sensitive credentials.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Provide users with secure and consent-based access.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">Streamlined and efficient authentication process.</b>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      name: "Zapier Workflows",
+      discriptions: (
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
+          <li>
+            <b className="text-[#204BA2]">
+              Automate rewards and tasks with pre-built Zapier workflows.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Connect with over 5,000+ apps for seamless data integration.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Save time by automating repetitive processes.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">Easy setup with no coding required.</b>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      name: "API-based Data Integration",
+      discriptions: (
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
+          <li>
+            <b className="text-[#204BA2]">
+              Integrate seamlessly using RESTful APIs.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Fetch and push data from connected applications effortlessly.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Ensure real-time data sync between systems.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">Customizable integration for unique workflows.</b>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      name: "Rewards Automation",
+      discriptions: (
+        <ul className="list-disc pt-3 text-sm text-neutral-500 space-y-1">
+          <li>
+            <b className="text-[#204BA2]">
+              Automate client rewards using integrated systems.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Trigger one-to-one or bulk rewards with ease.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">
+              Customize reward triggers based on user-defined actions.
+            </b>
+          </li>
+          <li>
+            <b className="text-[#204BA2]">Ensure timely and accurate reward delivery.</b>
+          </li>
+        </ul>
+      ),
+    },
+  ];
+  
   return (
-    <div
-      ref={ref}
-      className={cn(
-        "z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className
-      )}
-    >
-      {children}
-    </div>
+    <>
+      <MaxWidthWrapper>
+        <AnimationContainer delay={0.1} className='w-full'>
+          <div className='flex flex-col items-center justify-center py-10 max-w-xl mx-auto'>
+            <MagicBadge title='Integrations' />
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight'>
+              Connect your Apps With Budgetree Integrations
+            </h1>
+            <p className='text-base md:text-lg mt-6 text-center text-muted-foreground'>
+            Seamlessly integrate your enterprise applications with the Budgetree platform and enable end-to-end Rewards, Incentives, Payouts, Loyalty & Commissions automation.
+            </p>
+            <div className='flex items-center justify-center gap-x-4 mt-8'>
+              <Button size='sm' asChild>
+                <Link href='https://integrations.budgetree.in'>Get started</Link>
+              </Button>
+              <Button size='sm' variant='outline' asChild>
+                <Link href='https://integrations.budgetree.in'>Learn more</Link>
+              </Button>
+            </div>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8'>
+            {STATSTICS.map((process: any, id: any) => (
+              <AnimationContainer delay={0.2 * id} key={id}>
+                <MagicCard className='group md:py-8'>
+                  <div className='flex flex-col items-center justify-center gap-2 w-full'>
+                    <h6 className='text-3xl font-bold'>{process.count}+</h6>
+                    <p className='text-lg font-heading font-semibold uppercase text-center'>
+                      {process?.name}
+                    </p>
+                  </div>
+                </MagicCard>
+              </AnimationContainer>
+            ))}
+          </div>
+        </AnimationContainer>
+        <AnimationContainer
+          delay={0.2}
+          className='relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full'
+        >
+          {/* Glowing Background */}
+          <div className='absolute md:top-[10%] left-1/2 bg-gradient-to-r from-[#1D398D] to-[#2079D8] via-[#2079D8] w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow'></div>
+
+          {/* Content Container */}
+          <div className='-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl'>
+            {/* Border Beam Animation */}
+            <BorderBeam size={250} duration={12} delay={9} />
+
+            {/* Image */}
+            <Image
+              src='/assets/integrations/integration.png'
+              alt='Payout Stack'
+              width={1200}
+              height={700}
+              quality={100}
+              className='rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border'
+            />
+
+            {/* Gradient Overlay */}
+            <div className='absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40'></div>
+            <div className='absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50'></div>
+          </div>
+        </AnimationContainer>
+
+        <div className='py-4 md:py-20 mx-auto'>
+          <h6 className='text-3xl font-semibold py-4 md:py-20 mx-auto'>
+           30 + Integrations
+          </h6>
+          <p className='pt-2 text-'>
+          Seamlessly integrate your enterprise applications with the Budgetree platform.
+          </p>
+          <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10'>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        Surveys
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Collect valuable feedback and insights with
+                        user-friendly surveys.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Tailored to your needs</li>
+                        <li>Real-time analysis</li>
+                        <li>Easy integration</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        CRM
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Streamline customer relationships and boost retention.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Centralized data management</li>
+                        <li>Personalized interactions</li>
+                        <li>Scalable solutions</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        HRMS
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Simplify HR processes and enhance employee satisfaction.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Payroll and benefits management.</li>
+                        <li>Streamlined recruitment.</li>
+                        <li>Real-time performance tracking.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        Productivity Tools
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Empower teams with tools and integration that drive
+                        efficiency.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Seamless collaboration</li>
+                        <li>Task automation</li>
+                        <li>Time management solutions</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        Zapier
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Automate workflows with powerful integrations.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Connect your favorite apps.</li>
+                        <li>Simplify repetitive tasks. </li>
+                        <li>Scale effortlessly.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+            <div className='flex flex-col items-start h-min gap-6'>
+              <AnimationContainer delay={0.2}>
+                <MagicCard className='md:p-0 bg-white '>
+                  <Card className='flex flex-col w-full border-none h-min bg-[#f7fafb]'>
+                    <CardHeader className='space-y-0'>
+                      <CardTitle className='text-lg text-neutral-600 font-medium '>
+                        Real-Time Payment Dashboard
+                      </CardTitle>
+                      <CardDescription className='text-neutral-600'>
+                        Gain full visibility and control over your transactions.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className='space-y-2 pb-4'>
+                      <ul className='text-neutral-600 list-disc text-sm'>
+                        <li>Monitor all payouts</li>
+                        <li>Generate detailed reports for compliance</li>
+                        <li>Intuitive UI for hassle-free navigation</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </MagicCard>
+              </AnimationContainer>
+            </div>
+          </section>
+          <section className='pt-40 w-full flex flex-col md:flex-row items-center gap-8  md:gap-20'>
+            <div className='flex flex-col gap-10'>
+              {" "}
+              <h6 className='text-3xl font-semibold'>Get Started</h6>
+              <Steper Stepers={Stepers} />
+            </div>
+            <ContactForm />
+          </section>
+        </div>
+        <AnimationContainer delay={0.3} className='w-full'>
+          <div className='py-14'>
+            <div className='mx-auto px-4 md:px-8'>
+              <h2 className='text-center text-sm font-medium font-heading text-neutral-400 uppercase'>
+                Trusted by the best in the industry
+              </h2>
+              <div className='mt-8'>
+                <ul className='flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center py-8'>
+                  {COMPANIES.map((company) => (
+                    <li key={company.name}>
+                      <Image
+                        src={company.logo}
+                        alt={company.name}
+                        width={80}
+                        height={80}
+                        quality={100}
+                        className='w-28 h-auto'
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </AnimationContainer>
+      </MaxWidthWrapper>
+      <MaxWidthWrapper className='pt-20'>
+        <AnimationContainer delay={0.4} className='w-full'>
+          <LampContainer className='max-w-2xl mx-auto'>
+            <div className='flex flex-col items-center justify-center relative w-full text-center'>
+              <h2 className='bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8'>
+                Powerup your reward strategy
+              </h2>
+              <p className='text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg'>
+                Take control of your rewards with advanced features and
+                real-time insights. Simplify your workflow and achieve more.
+              </p>
+              <div className='mt-6'>
+                <Button asChild>
+                  <Link href='/auth/sign-up' className='flex items-center'>
+                    Get started for free
+                    <ArrowRightIcon className='w-4 h-4 ml-2' />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </LampContainer>
+        </AnimationContainer>
+      </MaxWidthWrapper>
+    </>
   );
-});
-
-export function Integrations({ className }: { className?: string }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const div1Ref = useRef<HTMLDivElement>(null);
-  const div2Ref = useRef<HTMLDivElement>(null);
-  const div3Ref = useRef<HTMLDivElement>(null);
-  const div4Ref = useRef<HTMLDivElement>(null);
-  const div5Ref = useRef<HTMLDivElement>(null);
-  const div6Ref = useRef<HTMLDivElement>(null);
-  const div7Ref = useRef<HTMLDivElement>(null);
-
-  return (
-    <div
-      className={cn(
-        "relative flex w-full max-w-[500px] items-center justify-center overflow-hidden rounded-lg  bg-[#f6f9fb] p-2 border-[1px] md:shadow-xl ",
-        className
-      )}
-      ref={containerRef}
-    >
-      <div className='flex h-full w-full flex-row items-stretch justify-between gap-10'>
-        <div className='flex flex-col justify-center'>
-          <Circle ref={div7Ref}>
-            <Icons.user className='text-black' />
-          </Circle>
-        </div>
-        <div className='flex flex-col justify-center'>
-          <Circle ref={div6Ref} className='h-16 w-16'>
-            <Icons.openai className='h-6 w-6' />
-          </Circle>
-        </div>
-        <div className='flex flex-col justify-center gap-2'>
-          <Circle ref={div1Ref}>
-            <Icons.googleDrive className='h-6 w-6' />
-          </Circle>
-          <Circle ref={div2Ref}>
-            <Icons.googleDocs className='h-6 w-6' />
-          </Circle>
-          <Circle ref={div3Ref}>
-            <Icons.whatsapp className='h-6 w-6' />
-          </Circle>
-          <Circle ref={div4Ref}>
-            <Icons.messenger className='h-6 w-6' />
-          </Circle>
-          <Circle ref={div5Ref}>
-            <Icons.notion className='h-6 w-6' />
-          </Circle>
-        </div>
-      </div>
-
-      {/* AnimatedBeams */}
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div1Ref}
-        toRef={div6Ref}
-        duration={3}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div2Ref}
-        toRef={div6Ref}
-        duration={3}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div3Ref}
-        toRef={div6Ref}
-        duration={3}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div4Ref}
-        toRef={div6Ref}
-        duration={3}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div5Ref}
-        toRef={div6Ref}
-        duration={3}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div6Ref}
-        toRef={div7Ref}
-        duration={3}
-      />
-    </div>
-  );
-}
-
-const Icons = {
-  openai: (props: LucideProps) => (
-    <svg role='img' viewBox='0 0 24 24' {...props}>
-      <path d='M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z' />
-    </svg>
-  ),
-  user: (props: LucideProps) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      className='lucide lucide-user'
-      {...props}
-    >
-      <path d='M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2' />
-      <circle cx='12' cy='7' r='4' />
-    </svg>
-  ),
-  googleDrive: (props: LucideProps) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='2500'
-      height='1223'
-      viewBox='0 0 92 45'
-    >
-      <linearGradient
-        id='a'
-        gradientUnits='userSpaceOnUse'
-        x1='45.483'
-        x2='45.483'
-        y2='45.001'
-      >
-        <stop offset='0' stop-color='#00AEEF' />
-        <stop offset='.212' stop-color='#0097DC' />
-        <stop offset='.519' stop-color='#007CC5' />
-        <stop offset='.792' stop-color='#006CB8' />
-        <stop offset='1' stop-color='#0066B3' />
-      </linearGradient>
-      <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
-        fill='url(#a)'
-        d='M0 45h45.974L90.966 0H0v45'
-      />
-      <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
-        fill='#fff'
-        d='M53.984 9H45l.03 21.13-7.823-21.137H29.45l-6.678 17.653c-.71-4.492-5.354-6.042-9.008-7.203-2.413-.775-4.974-1.915-4.948-3.175.02-1.034 1.37-1.993 4.053-1.85 1.8.097 3.39.242 6.553 1.77l3.11-5.42C19.648 9.3 15.66 8.373 12.39 8.37h-.02c-3.813 0-6.988 1.235-8.956 3.27-1.372 1.42-2.112 3.226-2.142 5.223-.05 2.748.957 4.696 3.073 6.253 1.788 1.31 4.075 2.16 6.09 2.784 2.485.77 4.515 1.44 4.49 2.866a2.112 2.112 0 0 1-.59 1.398c-.62.64-1.57.88-2.885.906-2.537.054-4.417-.345-7.413-2.116l-2.767 5.49C4.263 36.146 7.44 37 11.05 37l.812-.006c3.142-.057 5.692-.81 7.718-2.44.116-.093.22-.187.328-.282l-.34 1.752 7.58-.024 1.36-3.482c1.43.488 3.056.758 4.782.758 1.682 0 3.264-.256 4.667-.716l.948 3.44 13.6.013.033-7.938h2.894c6.995 0 11.13-3.56 11.13-9.53C66.56 11.896 62.54 9 53.984 9zM33.29 27.062a8.128 8.128 0 0 1-2.868-.502l2.836-8.955h.055l2.79 8.98c-.84.3-1.797.477-2.814.477zm21.22-5.145h-1.974V14.7h1.975c2.63 0 4.73.876 4.73 3.562-.002 2.78-2.1 3.655-4.73 3.655'
-      />
-      <path fill='none' d='M0 0h92v45H0z' />
-    </svg>
-  ),
-  googleDocs: (props: LucideProps) => (
-    <svg
-      height='302'
-      preserveAspectRatio='xMidYMid'
-      viewBox='0 0 512 302'
-      width='512'
-      xmlns='http://www.w3.org/2000/svg'
-    >
-      <path
-        d='m38.5170778 39.3428059c28.1554228-28.7103206 63.6325252-41.82904925 106.7465942-38.95519179 41.520884 2.76746299 83.828538 23.25235059 114.138553 53.43802819 25.760963 25.6544822 35.502244 50.7854127 35.166621 88.3424077 2.862438-6.128487 8.456116-10.96471 17.400437-10.96471 13.529381 0 19.495331 11.008834 19.495331 20.506054v3.779926h-30.001486c0 6.640363 3.865793 11.681457 10.506155 11.681457 4.704783 0 8.992754-2.690492 11.092912-7.143041l7.477563 2.940936c-4.284394 8.318342-9.243199 11.93369-18.570475 11.93369-10.194956 0-16.036757-6.284176-18.442962-13.603445-3.718263 35.318225-17.650754 66.265556-41.925462 92.039409-29.279918 31.087248-62.567098 47.703093-100.914333 48.309397l-1.253288.014331c-38.800134.275012-72.8870434-15.185704-102.4209011-45.331972-29.3206177-29.930286-45.07539626-65.589513-46.83934701-107.560996-1.84187624-44.063835 11.03019201-81.5787331 38.34408791-109.4262801zm106.6276202-37.17026178c-42.599735-2.83957348-77.5651515 10.08994378-105.3504534 38.42284908-26.9499474 27.4764878-39.65604885 64.5076858-37.83393329 108.0987798 1.74517417 41.524711 17.31541359 76.766254 46.32989279 106.384036 29.5211954 30.133344 63.5605679 45.392895 102.3680589 44.780847l1.218606-.024772c37.317615-.927588 69.766301-17.298225 98.421757-47.722465 25.401441-26.97017 39.342733-59.650435 41.99059-97.159627-.046838-.638083-.069286-1.271966-.069286-1.899341 0-1.545831.136239-3.13108.417182-4.707351 1.475347-40.589956-7.706993-66.5728308-34.497211-93.2523139-30.014711-29.8915842-71.922953-50.18308152-112.995203-52.92064198zm54.026261 129.70467088 13.604514 31.037254 14.427403-31.037254h10.169844l-27.65625 59.494927h-10.171633l8.04822-17.309306-18.491764-42.185621zm66.538147-.673696c12.352291 0 18.906786 8.066108 18.906786 21.849511 0 13.445303-6.640362 21.849511-19.07673 21.849511-4.958805 0-9.243198-2.35418-11.343356-5.377405v21.845933h-8.74052v-59.493138h8.74052v4.872938c1.597479-2.774569 6.384551-5.54735 11.5133-5.54735zm123.033821 0c6.30405 0 11.345144 2.100158 15.126859 6.304051 3.781715 4.202104 5.713717 9.411354 5.713717 15.54546s-1.932002 11.345145-5.713717 15.547249c-3.781715 4.200316-8.822809 6.302262-15.126859 6.302262-6.302262 0-11.427434-2.101946-15.210938-6.302262-3.781715-4.202104-5.629639-9.413143-5.629639-15.547249s1.847924-11.343356 5.629639-15.54546c3.783504-4.203893 8.908676-6.304051 15.210938-6.304051zm-201.034643-15.796978v8.738731h-18.559741v50.085362h-9.244987v-50.085362h-18.559741v-8.738731zm251.438785 15.796799c1.932002 0 3.695848.338101 5.377405 1.008935l-1.513402 7.983819c-1.343456-.840779-3.023225-1.259379-4.957016-1.259379-3.109092 0-5.799583 1.679768-8.066108 5.123383-2.270102 3.361325-3.363114 8.151975-3.363114 14.454237v15.715404h-8.738731v-42.351987h8.738731v7.058963c2.774569-4.958805 7.815663-7.733375 12.522235-7.733375zm60.752874.001253c7.645719 0 12.100057 5.041094 12.100057 12.688601v30.336009h-8.738731v-28.402218c0-4.454338-2.438258-6.890807-6.219973-6.890807-5.461483 0-9.915821 7.141252-9.915821 18.318241v16.974784h-8.74052v-28.402218c0-4.454338-2.436469-6.890807-6.216395-6.890807-5.631428 0-9.91761 7.141252-9.91761 19.243097v16.049928h-8.738731v-42.351988h8.738731v7.227119c3.447192-5.295117 7.647507-7.899741 12.772679-7.899741 5.715506 0 10.422077 3.445403 11.683245 8.738731 2.939148-5.629639 7.729797-8.738731 13.193069-8.738731zm-141.646512-16.470675c2.772781 0 5.044672.502678 6.976674 1.511613l-1.767424 7.395274c-1.509824-.756701-3.191381-1.17709-4.957016-1.17709-3.779926 0-5.713717 2.186024-5.713717 6.640362v2.772781h9.327276v7.729796h-9.327276v34.622191h-8.738731v-34.622191h-5.463272v-7.729796h5.463272v-2.184236c0-10.001688 5.379194-14.958704 14.200214-14.958704zm-93.723204 24.201187c-3.193169 0-5.797794 1.261168-7.813874 3.867582-2.017869 2.518758-3.025014 5.964161-3.025014 10.250343s1.007145 7.729797 3.025014 10.336211c2.01608 2.520547 4.620705 3.781715 7.813874 3.781715 3.194959 0 5.799584-1.261168 7.817453-3.781715 2.01608-2.606414 3.023225-6.050029 3.023225-10.336211s-1.007145-7.731585-3.023225-10.250343c-2.017869-2.606414-4.622494-3.867582-7.817453-3.867582zm124.2127 0c-3.61356 0-6.470418 1.427535-8.572365 4.202104-2.01608 2.772781-3.023225 6.050028-3.023225 9.915821s1.007145 7.227119 3.023225 9.999899c2.101947 2.77457 4.958805 4.118027 8.572365 4.118027 3.613559 0 6.472206-1.343457 8.488286-4.118027 2.100158-2.77278 3.109092-6.134106 3.109092-9.999899s-1.008934-7.14304-3.109092-9.915821c-2.01608-2.774569-4.874727-4.202104-8.488286-4.202104zm-76.773644.00161c-5.629639 0-9.329065 3.779926-10.33621 9.243198h20.588343c-.756701-5.295116-4.286182-9.243198-10.252133-9.243198z'
-        fill='#262627'
-      />
-    </svg>
-  ),
-  whatsapp: (props: LucideProps) => (
-    <svg
-      fill='none'
-      height='2500'
-      width='2500'
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 50.667 50.667'
-    >
-      <path
-        d='M25.333 50.667c13.992 0 25.334-11.343 25.334-25.334S39.325 0 25.333 0 0 11.342 0 25.333s11.342 25.334 25.333 25.334z'
-        fill='#2196f3'
-      />
-      <path
-        clip-rule='evenodd'
-        d='M14.866 32.574h16.755V20.288c0-1.851-1.5-3.351-3.351-3.351H11.515v12.286c0 1.851 1.5 3.351 3.351 3.351zm18.988-4.467l6.702 4.467V16.937l-6.701 4.468z'
-        fill='#fff'
-        fill-rule='evenodd'
-      />
-    </svg>
-  ),
-  messenger: (props: LucideProps) => (
-    <svg
-      viewBox='-0.12979372698077785 0 32.42343730730004 32'
-      xmlns='http://www.w3.org/2000/svg'
-      width='2500'
-      height='2458'
-    >
-      <circle cx='17' cy='6' fill='#7b83eb' r='4.667' />
-      <path
-        d='M16.667 7H12.44l.021.093.002.008.022.086A4.671 4.671 0 0 0 18 10.559V8.333A1.337 1.337 0 0 0 16.667 7z'
-        opacity='.1'
-      />
-      <path
-        d='M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z'
-        opacity='.2'
-      />
-      <circle cx='27.5' cy='7.5' fill='#5059c9' r='3.5' />
-      <path
-        d='M30.5 12h-7.861a.64.64 0 0 0-.64.64v8.11a5.121 5.121 0 0 0 3.967 5.084A5.006 5.006 0 0 0 32 20.938V13.5a1.5 1.5 0 0 0-1.5-1.5z'
-        fill='#5059c9'
-      />
-      <path
-        d='M25 13.5V23a7.995 7.995 0 0 1-14.92 4 7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5h13a1.498 1.498 0 0 1 1.5 1.5z'
-        fill='#7b83eb'
-      />
-      <path
-        d='M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z'
-        opacity='.2'
-      />
-      <path
-        d='M18 12v12.67a1.32 1.32 0 0 1-1.04 1.29.966.966 0 0 1-.29.04H9.58a8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z'
-        opacity='.1'
-      />
-      <path
-        d='M17 12v13.67a.967.967 0 0 1-.04.29A1.32 1.32 0 0 1 15.67 27h-5.59a7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z'
-        opacity='.2'
-      />
-      <path
-        d='M17 12v11.67A1.336 1.336 0 0 1 15.67 25H9.25A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z'
-        opacity='.2'
-      />
-      <path
-        d='M10.5 12A1.498 1.498 0 0 0 9 13.5V23a8.24 8.24 0 0 0 .25 2h5.42A1.336 1.336 0 0 0 16 23.67V12z'
-        opacity='.2'
-      />
-      <path
-        d='M1.333 8h13.334A1.333 1.333 0 0 1 16 9.333v13.334A1.333 1.333 0 0 1 14.667 24H1.333A1.333 1.333 0 0 1 0 22.667V9.333A1.333 1.333 0 0 1 1.333 8z'
-        fill='#4b53bc'
-      />
-      <path
-        d='M11.98 12.975H8.99v8.02H7.028v-8.02H4.02v-1.97h7.96z'
-        fill='#fff'
-      />
-      <path d='M0 0h32v32H0z' fill='none' />
-    </svg>
-  ),
-  notion: (props: LucideProps) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='2500'
-      height='1750'
-      viewBox='0.5 0.5 999 699.242'
-    >
-      <path
-        fill='#00A1E0'
-        d='M416.224 76.763c32.219-33.57 77.074-54.391 126.682-54.391 65.946 0 123.48 36.772 154.12 91.361 26.626-11.896 56.098-18.514 87.106-18.514 118.94 0 215.368 97.268 215.368 217.247 0 119.993-96.428 217.261-215.368 217.261a213.735 213.735 0 0 1-42.422-4.227c-26.981 48.128-78.397 80.646-137.412 80.646-24.705 0-48.072-5.706-68.877-15.853-27.352 64.337-91.077 109.448-165.348 109.448-77.344 0-143.261-48.939-168.563-117.574-11.057 2.348-22.513 3.572-34.268 3.572C75.155 585.74.5 510.317.5 417.262c0-62.359 33.542-116.807 83.378-145.937-10.26-23.608-15.967-49.665-15.967-77.06C67.911 87.25 154.79.5 261.948.5c62.914 0 118.827 29.913 154.276 76.263'
-      />
-      <path
-        fill='#FFF'
-        d='M145.196 363.11c-.626 1.637.228 1.979.427 2.263 1.878 1.366 3.786 2.349 5.707 3.444 10.189 5.407 19.81 6.986 29.871 6.986 20.492 0 33.214-10.9 33.214-28.447v-.341c0-16.224-14.358-22.115-27.835-26.37l-1.75-.569c-10.161-3.302-18.927-6.147-18.927-12.836v-.355c0-5.721 5.123-9.934 13.064-9.934 8.823 0 19.297 2.932 26.042 6.66 0 0 1.978 1.281 2.704-.64.398-1.025 3.814-10.218 4.17-11.214.384-1.082-.299-1.879-.996-2.306-7.699-4.682-18.344-7.884-29.358-7.884l-2.049.014c-18.756 0-31.848 11.328-31.848 27.565v.342c0 17.119 14.444 22.669 27.978 26.54l2.177.669c9.862 3.031 18.358 5.635 18.358 12.58v.342c0 6.347-5.521 11.071-14.43 11.071-3.458 0-14.487-.071-26.398-7.6-1.438-.84-2.277-1.451-3.387-2.12-.583-.37-2.049-1.011-2.689.925l-4.045 11.215zM445.194 363.11c-.626 1.637.228 1.979.427 2.263 1.878 1.366 3.786 2.349 5.706 3.444 10.189 5.407 19.811 6.986 29.871 6.986 20.492 0 33.215-10.9 33.215-28.447v-.341c0-16.224-14.359-22.115-27.836-26.37l-1.75-.569c-10.161-3.302-18.928-6.147-18.928-12.836v-.355c0-5.721 5.123-9.934 13.064-9.934 8.823 0 19.297 2.932 26.043 6.66 0 0 1.978 1.281 2.703-.64.398-1.025 3.814-10.218 4.17-11.214.385-1.082-.299-1.879-.996-2.306-7.699-4.682-18.344-7.884-29.358-7.884l-2.05.014c-18.756 0-31.848 11.328-31.848 27.565v.342c0 17.119 14.444 22.669 27.978 26.54l2.177.669c9.862 3.031 18.373 5.635 18.373 12.58v.342c0 6.347-5.536 11.071-14.445 11.071-3.457 0-14.486-.071-26.397-7.6-1.438-.84-2.291-1.423-3.372-2.12-.371-.242-2.107-.911-2.705.925l-4.042 11.215zM649.995 328.74c0 9.919-1.85 17.731-5.493 23.253-3.601 5.465-9.051 8.126-16.649 8.126-7.613 0-13.035-2.647-16.579-8.126-3.587-5.507-5.407-13.334-5.407-23.253 0-9.904 1.82-17.703 5.407-23.168 3.544-5.407 8.966-8.04 16.579-8.04 7.599 0 13.049 2.633 16.664 8.04 3.629 5.464 5.478 13.263 5.478 23.168m17.106-18.386c-1.68-5.679-4.298-10.688-7.784-14.857-3.487-4.184-7.898-7.542-13.136-9.99-5.223-2.433-11.398-3.671-18.328-3.671-6.945 0-13.121 1.238-18.344 3.671-5.237 2.448-9.648 5.807-13.149 9.99-3.472 4.184-6.091 9.193-7.784 14.857-1.665 5.649-2.505 11.825-2.505 18.386s.84 12.751 2.505 18.386c1.693 5.664 4.298 10.674 7.799 14.857 3.486 4.184 7.912 7.528 13.135 9.904 5.236 2.377 11.398 3.586 18.344 3.586 6.93 0 13.092-1.209 18.328-3.586 5.223-2.376 9.648-5.721 13.136-9.904 3.486-4.17 6.104-9.179 7.784-14.857 1.68-5.649 2.519-11.84 2.519-18.386s-.841-12.737-2.52-18.386M807.568 357.47c-.569-1.665-2.177-1.039-2.177-1.039-2.49.954-5.138 1.836-7.955 2.277-2.861.44-6.006.669-9.379.669-8.281 0-14.856-2.462-19.566-7.329-4.725-4.867-7.372-12.736-7.344-23.381.029-9.691 2.362-16.978 6.561-22.527 4.17-5.521 10.517-8.354 18.984-8.354 7.059 0 12.438.811 18.072 2.59 0 0 1.352.583 1.992-1.181 1.494-4.156 2.604-7.13 4.198-11.698.456-1.295-.654-1.85-1.053-2.007-2.22-.868-7.457-2.276-11.413-2.874-3.7-.569-8.026-.868-12.836-.868-7.188 0-13.591 1.224-19.069 3.672-5.465 2.433-10.104 5.791-13.775 9.976-3.672 4.184-6.461 9.192-8.325 14.856-1.85 5.649-2.789 11.854-2.789 18.415 0 14.188 3.828 25.657 11.385 34.054 7.57 8.425 18.941 12.708 33.77 12.708 8.766 0 17.76-1.778 24.221-4.326 0 0 1.238-.598.697-2.034l-4.199-11.599zM837.497 319.238c.811-5.507 2.334-10.09 4.682-13.661 3.544-5.422 8.951-8.396 16.551-8.396s12.623 2.988 16.223 8.396c2.391 3.571 3.43 8.354 3.843 13.661h-41.299zm57.592-12.111c-1.451-5.479-5.052-11.015-7.414-13.548-3.729-4.013-7.371-6.816-10.986-8.382-4.725-2.021-10.389-3.358-16.593-3.358-7.229 0-13.79 1.21-19.112 3.714-5.336 2.505-9.818 5.921-13.334 10.176-3.516 4.24-6.162 9.292-7.842 15.027-1.693 5.707-2.547 11.926-2.547 18.485 0 6.675.883 12.894 2.633 18.486 1.765 5.636 4.582 10.602 8.396 14.714 3.799 4.142 8.695 7.387 14.558 9.648 5.821 2.249 12.894 3.416 21.019 3.401 16.722-.057 25.53-3.785 29.159-5.792.641-.355 1.253-.981.483-2.774l-3.785-10.603c-.568-1.579-2.177-.996-2.177-.996-4.142 1.537-10.032 4.298-23.766 4.27-8.979-.014-15.64-2.661-19.81-6.803-4.283-4.24-6.375-10.474-6.745-19.268l57.905.057s1.522-.028 1.68-1.509c.057-.624 1.993-11.895-1.722-24.945M373.762 319.238c.825-5.507 2.334-10.09 4.682-13.661 3.543-5.422 8.951-8.396 16.55-8.396s12.623 2.988 16.237 8.396c2.376 3.571 3.415 8.354 3.828 13.661h-41.297zm57.577-12.111c-1.451-5.479-5.037-11.015-7.399-13.548-3.729-4.013-7.372-6.816-10.986-8.382-4.725-2.021-10.388-3.358-16.593-3.358-7.215 0-13.79 1.21-19.112 3.714-5.336 2.505-9.819 5.921-13.334 10.176-3.515 4.24-6.162 9.292-7.841 15.027-1.679 5.707-2.547 11.926-2.547 18.485 0 6.675.882 12.894 2.633 18.486 1.765 5.636 4.583 10.602 8.396 14.714 3.8 4.142 8.695 7.387 14.558 9.648 5.821 2.249 12.893 3.416 21.019 3.401 16.721-.057 25.53-3.785 29.159-5.792.641-.355 1.252-.981.484-2.774l-3.771-10.603c-.584-1.579-2.191-.996-2.191-.996-4.141 1.537-10.019 4.298-23.78 4.27-8.965-.014-15.625-2.661-19.795-6.803-4.284-4.24-6.375-10.474-6.746-19.268l57.905.057s1.522-.028 1.679-1.509c.055-.624 1.99-11.895-1.738-24.945M248.601 357.153c-2.263-1.808-2.576-2.263-3.344-3.43-1.139-1.779-1.722-4.312-1.722-7.528 0-5.095 1.679-8.752 5.166-11.214-.042.015 4.981-4.34 16.792-4.184 8.296.114 15.71 1.338 15.71 1.338v26.327h.014s-7.357 1.579-15.639 2.077c-11.783.712-17.02-3.4-16.977-3.386m23.039-40.686c-2.348-.171-5.394-.271-9.037-.271-4.966 0-9.762.626-14.259 1.836-4.525 1.209-8.595 3.103-12.096 5.606a27.927 27.927 0 0 0-8.396 9.549c-2.049 3.814-3.088 8.311-3.088 13.349 0 5.123.882 9.577 2.647 13.221 1.765 3.657 4.312 6.702 7.556 9.051 3.216 2.348 7.187 4.069 11.797 5.108 4.54 1.039 9.691 1.565 15.327 1.565 5.934 0 11.854-.483 17.589-1.466 5.678-.968 12.651-2.377 14.586-2.817a146.25 146.25 0 0 0 4.056-1.039c1.438-.355 1.324-1.893 1.324-1.893l-.029-52.952c0-11.613-3.102-20.223-9.207-25.559-6.077-5.322-15.028-8.013-26.597-8.013-4.341 0-11.328.599-15.512 1.438 0 0-12.651 2.448-17.86 6.518 0 0-1.138.712-.512 2.306l4.099 11.015c.512 1.423 1.893.939 1.893.939s.441-.171.954-.47c11.143-6.062 25.231-5.877 25.231-5.877 6.262 0 11.072 1.252 14.316 3.742 3.159 2.419 4.767 6.076 4.767 13.789v2.448c-4.981-.711-9.549-1.123-9.549-1.123M738.669 286.631c.44-1.31-.484-1.936-.869-2.078-.981-.384-5.905-1.423-9.705-1.665-7.271-.441-11.312.783-14.928 2.405-3.586 1.622-7.57 4.24-9.791 7.215v-7.044c0-.982-.697-1.765-1.665-1.765h-14.843c-.967 0-1.664.782-1.664 1.765v86.366c0 .968.797 1.765 1.764 1.765h15.213a1.76 1.76 0 0 0 1.75-1.765v-43.147c0-5.792.641-11.569 1.922-15.198 1.252-3.587 2.96-6.461 5.066-8.525 2.12-2.049 4.525-3.486 7.158-4.297 2.689-.826 5.663-1.096 7.77-1.096 3.031 0 6.361.782 6.361.782 1.109.128 1.736-.555 2.105-1.565.997-2.647 3.815-10.574 4.356-12.153'
-      />
-      <path
-        fill='#FFF'
-        d='M595.874 246.603c-1.85-.569-3.529-.954-5.721-1.366-2.221-.398-4.867-.598-7.869-.598-10.475 0-18.729 2.96-24.52 8.794-5.764 5.807-9.678 14.644-11.642 26.271l-.712 3.913h-13.148s-1.594-.057-1.936 1.68l-2.148 12.053c-.157 1.139.342 1.864 1.878 1.864h12.794l-12.979 72.463c-1.011 5.835-2.178 10.631-3.473 14.273-1.267 3.587-2.504 6.276-4.041 8.24-1.48 1.879-2.875 3.273-5.295 4.084-1.992.669-4.297.982-6.816.982-1.395 0-3.258-.229-4.639-.513-1.366-.271-2.092-.569-3.131-1.011 0 0-1.494-.568-2.092.926-.47 1.238-3.885 10.615-4.298 11.769-.398 1.152.171 2.049.896 2.319 1.708.598 2.974.996 5.294 1.551 3.217.755 5.934.797 8.481.797 5.322 0 10.189-.754 14.217-2.205 4.042-1.466 7.57-4.014 10.701-7.457 3.373-3.729 5.493-7.628 7.515-12.964 2.006-5.266 3.729-11.812 5.094-19.439l13.05-73.815h19.069s1.607.057 1.936-1.693l2.162-12.039c.143-1.152-.341-1.864-1.893-1.864h-18.514c.1-.412.939-6.931 3.06-13.063.911-2.604 2.618-4.725 4.056-6.177 1.424-1.423 3.06-2.433 4.854-3.017 1.835-.598 3.928-.882 6.219-.882 1.736 0 3.457.199 4.752.469 1.793.385 2.49.584 2.961.727 1.893.569 2.148.014 2.519-.896l4.426-12.153c.455-1.312-.669-1.867-1.067-2.023M337.194 371.834c0 .968-.697 1.751-1.665 1.751h-15.355c-.968 0-1.651-.783-1.651-1.751v-123.58c0-.967.683-1.75 1.651-1.75h15.355c.968 0 1.665.783 1.665 1.75v123.58z'
-      />
-    </svg>
-  ),
 };
+
+export default index;
